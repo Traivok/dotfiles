@@ -7,7 +7,7 @@ echo -n "Yes or no: "
 read commit_str
 
 function upd {
-    ln -sfn $1 $2
+    ln -sfn $1 $2x
 }
 
 if echo "$commit_str" | grep -iq "^y" ; then
