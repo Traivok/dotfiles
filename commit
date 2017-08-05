@@ -1,13 +1,12 @@
 #!/bin/bash
 
-
 git status
 
 echo -n "Yes or no: "
 read choice
 
 function upd {
-    ln -sfn $1 $2x
+    ln -sfnv $1 $2x
 }
 
 if echo "$choice" | grep -iq "^y" ; then
@@ -26,5 +25,6 @@ if echo "$choice" | grep -iq "^y" ; then
     
     exit 0
 else
+    echo "nil"
     exit 2
 fi
