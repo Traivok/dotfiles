@@ -4,13 +4,13 @@
 git status
 
 echo -n "Yes or no: "
-read commit_str
+read choice
 
 function upd {
     ln -sfn $1 $2x
 }
 
-if echo "$commit_str" | grep -iq "^y" ; then
+if echo "$choice" | grep -iq "^y" ; then
 
     upd ~/.extend.Xresources  ./Xresources/.extend.Xresources
     upd ~/.Xresources  ./Xresources/.Xresources 
@@ -19,6 +19,9 @@ if echo "$commit_str" | grep -iq "^y" ; then
     upd ~/.config/polybar/ ./polybarconfig/
 
     git add .
+
+    echo -n "Commit msg: "
+    read commit_str
     git commit -m "$commit_str"
     
     exit 0
