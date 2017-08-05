@@ -1,5 +1,9 @@
+echo "Removing"
+rm -rfv ./Xresources/* ./i3 ./polybar ./ranger
+echo "Copying"
 cp -v ~/.extend.Xresources  ./Xresources/.extend.Xresources
 cp ~/.Xresources  ./Xresources/.Xresources 
 cp -Rv ~/.config/i3/ ./
 cp -Rv ~/.config/ranger/ ./
 cp -Rv ~/.config/polybar/ ./
+echo "Finished"

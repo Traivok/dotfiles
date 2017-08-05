@@ -1,1 +1,60 @@
-/home/ricardo/.extend.Xresources
+!Local Variables:
+!eval: (conf-xdefaults-mode)
+!End:
+
+! COLOR PALETTE HERE !
+*.foreground:   #d8dee9
+*.background:   #14131c
+*.cursorColor:  #c5c8c6
+
+*.color0:       #14131c
+*.color8:       #edd0c3
+*.color1:       #ffbb00
+*.color9:       #ffbb00
+*.color2:       #c44135
+*.color10:      #c44135
+*.color3:       #d87b30
+*.color11:      #d87b30
+*.color4:       #dc322f
+*.color12:      #dc322f
+*.color5:       #F11008
+*.color13:      #F11008
+*.color6:       #c242f4
+*.color14:      #c242f4
+*.color7:       #f1cbb3
+*.color15:      #f1cbb3
+
+*fading:                15
+*fadeColor:             black
+*pointerColorBackground:#2B2C2B
+*pointerColorForeground:#16A085
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: argb:ee222222, #dc322f, #dc322f
+rofi.color-normal: argb:0000000, #d8dee9, argb:0000000, #dc322f, #1b2b34
+rofi.color-active: argb:0000000, #d87b30, argb:0000000, #d87b30, #1b2b34
+rofi.color-urgent: argb:0000000, #ffbb00, argb:0000000, #ffbb00, #1b2b34
+
+! URxvt setup
+URxvt.perl-ext-common: fullscreen,default,matcher,keyboard-select
+
+URxvt.font: xft:xos4 Terminus:pixelsize=16
+URxvt.scrollBar: false
+
+urxvt*depth: 32
+urxvt*background: rgba:3C3C/3838/3939/D999
+
+URxvt*cursorBlink: false
+URxvt.cursorUnderline: true
+URxvt*saveLines: 500
+
+URxvt.iconFile: /usr/share/icons/Vertex-Maia/apps/scalable/terminal.svg
+
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5
