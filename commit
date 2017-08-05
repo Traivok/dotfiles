@@ -1,6 +1,5 @@
 #!/bin/bash
 
-alias upd="ln -sfn "
 
 git status
 
@@ -8,6 +7,8 @@ echo -n "Yes or no: "
 read commit_str
 
 if echo "$commit_str" | grep -iq "^y" ; then
+
+    alias upd="ln -sfn "
 
     upd ~/.extend.Xresources  ./Xresources/.extend.Xresources
     udp ~/.Xresources  ./Xresources/.Xresources
