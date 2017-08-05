@@ -13,7 +13,7 @@ function upd {
 if echo "$commit_str" | grep -iq "^y" ; then
 
     upd ~/.extend.Xresources  ./Xresources/.extend.Xresources
-    udp ~/.Xresources  ./Xresources/.Xresources
+    udp ~/.Xresources  ./Xresources/.Xresources 
     upd ~/.config/i3/ ./i3config/
     upd ~/.config/ranger/ ./rangerconfig/
     upd ~/.config/polybar/ ./polybarconfig/
