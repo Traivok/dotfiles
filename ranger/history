@@ -1,0 +1,21 @@
+search *.pdf
+search pdf
+find 
+shelll
+delete
+%p
+set show_hidden false
+feh --bg-scale minhalinda.png
+shell
+shell feh --bg-scale minhalinda.png
+shell mkdir .Umaru
+set show_hidden true
+open_with viewnior
+search 
+search Download
+touch 
+open_with pavucontrol
+shell feh --bg-scale /home/ricardo/Dropbox/Wallpaper/Megumin
+shell feh --bg-scale /home/ricardo/Dropbox/Wallpaper/Megumin/95358a89969b3ec27d0a5449b8f82e16.png
+shell feh --bg-scale /home/ricardo/Dropbox/Wallpaper/Megumin/wallhaven-496785.png
+

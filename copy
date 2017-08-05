@@ -1,0 +1,5 @@
+cp -v ~/.extend.Xresources  ./Xresources/.extend.Xresources
+cp ~/.Xresources  ./Xresources/.Xresources 
+cp -Rv ~/.config/i3/ ./
+cp -Rv ~/.config/ranger/ ./
+cp -Rv ~/.config/polybar/ ./
