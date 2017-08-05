@@ -6,9 +6,11 @@ git status
 echo -n "Yes or no: "
 read commit_str
 
-if echo "$commit_str" | grep -iq "^y" ; then
+function upd {
+    ln -sfn $1 $1
+}
 
-    alias upd="ln -sfn "
+if echo "$commit_str" | grep -iq "^y" ; then
 
     upd ~/.extend.Xresources  ./Xresources/.extend.Xresources
     udp ~/.Xresources  ./Xresources/.Xresources
