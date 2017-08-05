@@ -38,7 +38,7 @@ rofi.color-normal: argb:0000000, #d8dee9, argb:0000000, #dc322f, #1b2b34
 rofi.color-active: argb:0000000, #d87b30, argb:0000000, #d87b30, #1b2b34
 rofi.color-urgent: argb:0000000, #ffbb00, argb:0000000, #ffbb00, #1b2b34
 
-! URxvt conf
+! URxvt setup
 URxvt.perl-ext-common: fullscreen,default,matcher,keyboard-select
 
 URxvt.font: xft:xos4 Terminus:pixelsize=16
