@@ -229,8 +229,8 @@ scroll-down = ~/.config/polybar/pavolume.sh --down
 [module/exit]
 type = custom/script
 interval = 0
-label = " %output% "
-exec = echo "ricardo"
+label = "%output%"
+exec = echo "ricardo "
 format-underline = ${colors.my_color2}
 click-right = ~/.config/polybar/exit.sh switch_user
 click-left = ~/.config/polybar/exit.sh lock

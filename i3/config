@@ -290,8 +290,9 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id xautolock -time 5 -locker blurlock
 #exec_always --no-startup-id fix_xcursor
 
-exec --no-startup-id i3-msg 'workspace 2; exec i3-sensible-terminal'
-exec --no-startup-id i3-msg 'workspace 1; layout tabbed'
+exec --no-startup-id i3-msg 'workspace $workspace2; exec i3-sensible-terminal'
+exec --no-startup-id i3-msg 'workspace $workspace1; layout tabbed'
+
 # Workspace configuration
 assign [class="Emacs"] $workspace3
 assign [class="Firefox"] $workspace1
