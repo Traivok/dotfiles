@@ -3,31 +3,44 @@
 !End:
 
 ! COLOR PALETTE HERE !
-*.foreground:   #d8dee9
-*.background:   #14131c
-*.cursorColor:  #c5c8c6
+#define base00 #2e2a31
+#define base01 #4b484e
+#define base02 #69666b
+#define base03 #878589
+#define base04 #a5a3a6
+#define base05 #c3c2c4
+#define base06 #e1e0e1
+#define base07 #ffffff
+#define base08 #d8137f
+#define base09 #ff0066
+#define base0A #00ff00
+#define base0B #b33ce8
+#define base0C #d41acd
+#define base0D #7864fa
+#define base0E #149bda
+#define base0F #17ad98
 
-*.color0:       #14131c
-*.color8:       #edd0c3
-*.color1:       #ffbb00
-*.color9:       #ffbb00
-*.color2:       #c44135
-*.color10:      #c44135
-*.color3:       #d87b30
-*.color11:      #d87b30
-*.color4:       #dc322f
-*.color12:      #dc322f
-*.color5:       #F11008
-*.color13:      #F11008
-*.color6:       #c242f4
-*.color14:      #c242f4
-*.color7:       #f1cbb3
-*.color15:      #f1cbb3
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
 
-*fading:                15
-*fadeColor:             black
-*pointerColorBackground:#2B2C2B
-*pointerColorForeground:#16A085
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
