@@ -60,10 +60,10 @@ font-1 = Hack:fontformat=truetype:size=9;1
 font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
-modules-center = date 
-modules-right = musicinfo battery
+modules-center = date
+modules-right = pkg pavolume battery
 
-tray-position = right
+tray-position = none
 tray-padding = 8
 tray-transparent = false
 tray-offset-y = 0%
@@ -118,16 +118,6 @@ label-urgent-background = ${colors.my_background}
 label-urgent-underline = ${colors.my_color8}
 label-urgent-padding = 2
 
-[module/musicinfo]
-type = custom/script
-
-exec = ~/.config/polybar/music.sh
-interval = 5
-format = <label>
-label = %output:0:30:...%
-format-padding = 10
-format-foreground = ${colors.my_color2}
-
 [module/date]
 type = internal/date
 interval = 5
@@ -135,9 +125,9 @@ interval = 5
 date =
 date-alt = "%d/%m/%Y"
 
-time = "%a %b %d, %I:%M %p "
+time = "%a %b %d, %H:%M"
 
-time-alt = %H:%M
+time-alt = %H:%M:%S
 
 format-prefix-foreground = ${colors.my_foreground}
 format-underline = ${colors.my_color2}
@@ -197,11 +187,9 @@ screenchange-reload = true
 ;compositing-foreground = source
 ;compositing-border = over
 
-
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
 
 [module/xwindow]
 type = internal/xwindow
@@ -210,3 +198,29 @@ label-padding = 10
 ;label-underline = ${colors.my_color7}
 label-foreground = ${colors.my_color2}
 ;label-foreground = ${colors.my_color7}
+
+; [module/pomodoro]
+; type = custom/script
+; ; Use pomodoro glyphs in Nerd fonts
+; exec = pymodoro --break-prefix " " --pomodoro-prefix " " --pomodoro  --empty  --break  --length 5
+; ; Use default symbols
+; ; exec = pymodoro --length 5e
+; label = %output%
+; tail = true
+; interval = 0
+; ; Start or reset the timer
+; click-left = if [ -e ~/.pomodoro_session ]; then rm ~/.pomodoro_session; else echo "25 5" > ~/.pomodoro_session; fi
+; ; Increase pomodoro time
+; click-right = echo "$((`cut .pomodoro_session -d ' ' -f 1`+5)) 5" > .pomodoro_session
+; ; Reduce pomodoro time
+; click-middle = echo "$((`cut .pomodoro_session -d ' ' -f 1`-5)) 5" > .pomodoro_session
+
+[module/pavolume]
+type = custom/script
+interval = 0
+label = " %output% "
+exec = ~/.config/polybar/pavolume.sh
+click-right = exec pavucontrol
+click-left = ~/.config/polybar/pavolume.sh --togmute
+scroll-up = ~/.config/polybar/pavolume.sh --up
+scroll-down = ~/.config/polybar/pavolume.sh --down
