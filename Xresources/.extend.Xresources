@@ -46,10 +46,10 @@
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: argb:ee222222, #dc322f, #dc322f
-rofi.color-normal: argb:0000000, #d8dee9, argb:0000000, #dc322f, #1b2b34
-rofi.color-active: argb:0000000, #d87b30, argb:0000000, #d87b30, #1b2b34
-rofi.color-urgent: argb:0000000, #ffbb00, argb:0000000, #ffbb00, #1b2b34
+rofi.color-window: argb:ee222222, #b33ce8, #b33ce8
+rofi.color-normal: argb:0000000, #d8dee9, argb:0000000, #b33ce8, #1b2b34
+rofi.color-active: argb:0000000, #149bda, argb:0000000, #149bda, #1b2b34
+rofi.color-urgent: argb:0000000, #ff0066, argb:0000000, #ff0066, #1b2b34
 
 ! URxvt setup
 URxvt.perl-ext-common: fullscreen,default,matcher,keyboard-select
