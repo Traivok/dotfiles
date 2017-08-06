@@ -61,7 +61,7 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = pkg pavolume battery exit
+modules-right = pkg pavolume exit battery
 
 tray-position = none
 tray-padding = 8
@@ -228,10 +228,8 @@ scroll-down = ~/.config/polybar/pavolume.sh --down
 
 [module/exit]
 type = custom/script
-interval = 0
-label = " %output% "
-exec = echo "ricardo"
-format-underline = ${colors.my_color2}
-click-right = ~/.config/polybar/exit.sh switch_user
-click-left = ~/.config/polybar/exit.sh lock
-click-middle = ~/.config/polybar/exit.sh logout
+interval = 1
+exec blurlock
+format-underline = #268bd2
+format-prefix = "opea "
+format-prefix-foreground = #5b
