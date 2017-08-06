@@ -145,14 +145,14 @@ format-full = " - "
 
 format-charging-background = ${colors.my_background}
 format-charging = "⁣<label-charging> <animation-charging> - "
-format-charging-underline = ${colors.my_color2}
+;format-charging-underline = ${colors.my_color2}
 
 format-discharging-background = ${colors.my_background}
 format-discharging = "⁣<label-discharging> <ramp-capacity> - "
-format-discharging-underline = ${self.format-charging-underline}
+;format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix-foreground = ${colors.my_background}
-format-full-underline = ${self.format-charging-underline}
+;format-full-underline = ${self.format-charging-underline}
 
 format-charing-background = ${colors.my_background}
 
@@ -196,7 +196,7 @@ type = internal/xwindow
 label = %title:0:30:...%
 label-padding = 10
 ;label-underline = ${colors.my_color7}
-label-foreground = ${colors.my_color2}
+label-foreground = ${colors.my_foreground}
 ;label-foreground = ${colors.my_color7}
 
 ; [module/pomodoro]
@@ -219,7 +219,7 @@ label-foreground = ${colors.my_color2}
 type = custom/script
 interval = 0
 label = " %output% - "
-format-underline = ${colors.my_color2}
+;format-underline = ${colors.my_color2}
 exec = ~/.config/polybar/pavolume.sh
 click-right = exec pavucontrol
 click-left = ~/.config/polybar/pavolume.sh --togmute
@@ -231,7 +231,7 @@ type = custom/script
 interval = 0
 label = "%output%"
 exec = echo "ricardo "
-format-underline = ${colors.my_color2}
+;format-underline = ${colors.my_color2}
 click-right = ~/.config/polybar/exit.sh switch_user
 click-left = ~/.config/polybar/exit.sh lock
 click-middle = ~/.config/polybar/exit.sh logout
