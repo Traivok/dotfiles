@@ -5,7 +5,7 @@
 osd='no'
 inc='2'
 capvol='no'
-maxvol='200'
+maxvol='100'
 tmpfile='/tmp/pasink.tmp'
 autosync='yes'
 
