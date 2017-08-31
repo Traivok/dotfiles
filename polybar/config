@@ -120,9 +120,9 @@ label-urgent-padding = 2
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
-date =
+date = 
 date-alt = "%d/%m/%Y"
 
 time = "%a %b %d, %H:%M"
@@ -173,7 +173,7 @@ animation-charging-framerate = 750
 
 [module/pkg]
 type = custom/script
-interval = 1200
+interval = 300
 format = <label>
 label = "%output% - "
 exec = .config/polybar/pkg.sh
