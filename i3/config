@@ -39,6 +39,19 @@ bindsym Print exec gscreenshot
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+
+# change keyboard layout
+bindsym $mod+Shift+s mode "$mode_keymap"
+set $mode_keymap (b)r abnt2, (u)s international 
+mode "$mode_keymap" {
+     bindsym b exec --no-startup-id ~/.config/i3/br_keymap , mode "default"
+     bindsym u exec --no-startup-id ~/.config/i3/us_keymap , mode "default"
+
+     bindsym Return mode "default"
+     bindsym Escape mode "default"
+}
+
+
 # Set shut down, restart and locking features
 bindsym $mod+Shift+e mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
@@ -163,7 +176,7 @@ mode "resize" {
 bindsym j resize shrink width 10 px or 10 ppt
 bindsym k resize grow height 10 px or 10 ppt
 bindsym l resize shrink height 10 px or 10 ppt
-bindsym ccedilla resize grow width 10 px or 10 ppt
+bindsym c resize grow width 10 px or 10 ppt
 
 # same bindings, but for the arrow keys
 bindsym Left resize shrink width 10 px or 10 ppt
