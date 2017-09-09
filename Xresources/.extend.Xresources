@@ -4,7 +4,7 @@
 
 ! COLOR PALETTE HERE !
 #define base00 #2e2a31
-#define base01 #4b484e
+#define base01 #b19cd9
 #define base02 #69666b
 #define base03 #878589
 #define base04 #a5a3a6
