@@ -42,10 +42,11 @@ bindsym Print exec gscreenshot
 
 # change keyboard layout
 bindsym Mod1+Shift+k mode "$mode_keymap"
-set $mode_keymap (b)r abnt2, (u)s international 
+set $mode_keymap (b)r abnt2, (u)s , us (i)nternational 
 mode "$mode_keymap" {
      bindsym b exec --no-startup-id ~/.config/i3/br_keymap , mode "default"
      bindsym u exec --no-startup-id ~/.config/i3/us_keymap , mode "default"
+     bindsym i exec --no-startup-id ~/.config/i3/us_intl_keymap , mode "default"
 
      bindsym Return mode "default"
      bindsym Escape mode "default"
@@ -294,6 +295,7 @@ exec_always compton -f --config ~/.config/compton.conf
 exec firefox
 exec emacs
 exec deluge
+exec --no-startup-id ~/.config/i3/us_keymap
 exec --no-startup-id nm-applet
 #exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit
