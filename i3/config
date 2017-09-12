@@ -76,12 +76,20 @@ bindsym --release button2 kill
 
 bindsym $mod+d exec rofi -show run -lines 4 -width 32 -separator-style "dash" -matching "fuzzy" -font "San Francisco Display 16"
 
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+i focus up
+bindsym $mod+l focus right
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+i move up
+bindsym $mod+Shift+l move right
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -123,7 +131,9 @@ bindsym $mod+F9 scratchpad show
 
 #navigate workspaces next / previous
 bindsym $mod+Ctrl+Right workspace next
+bindsym $mod+n workspace next
 bindsym $mod+Ctrl+Left workspace prev
+bindsym $mod+p workspace prev
 
 # set workspace names
 set $workspace1 "1"
@@ -295,7 +305,7 @@ exec_always compton -f --config ~/.config/compton.conf
 exec firefox
 exec emacs
 exec deluge
-exec --no-startup-id ~/.config/i3/us_keymap
+exec --no-startup-id ~/.config/i3/br_keymap
 exec --no-startup-id nm-applet
 #exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit
