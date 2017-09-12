@@ -6,6 +6,8 @@
 3. zsh
 4. oh-my-zsh
 5. wmctrl
+6. [display-visor](https://github.com/Traivok/display-visor)
+
 
 ## Urxvt keyboard-select [quicksheet](https://github.com/muennich/urxvt-perls)
 ```
