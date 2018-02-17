@@ -1,0 +1,58 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>Terminal</icon>
+	<name>Terminal</name>
+	<unique-id>1517027863087265-3</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>stock_folder</icon>
+	<name>Thunar Root</name>
+	<unique-id>1367866030392883-2</unique-id>
+	<command>pkexec thunar %f</command>
+	<description>Thunar Root</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>system-search</icon>
+	<name>Search</name>
+	<unique-id>1367866030392913-3</unique-id>
+	<command>catfish %f</command>
+	<description>find files and folders</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>Run sh</name>
+	<unique-id>1506783947710926-1</unique-id>
+	<command>sh %f</command>
+	<description></description>
+	<patterns>*.sh</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>feh</name>
+	<unique-id>1517027821047763-2</unique-id>
+	<command>feh</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>emacs</icon>
+	<name>emacs</name>
+	<unique-id>1517027902288216-5</unique-id>
+	<command>emacs --directory %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
