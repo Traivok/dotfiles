@@ -25,3 +25,15 @@ POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}' # 21:19
 
 # Tell Antigen that you're done.
 antigen apply
+
+##############################
+#                            #
+#    1 - Alias Section       #   
+#                            #
+##############################
+alias emacs-here="emacs -mm --directory $(pwd) &!"
+##############################
+#                            #
+#   (1) - End of Alias       #   
+#                            #
+##############################
