@@ -47,7 +47,8 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;w" type="string" value="firefox"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;k" type="string" value="keepassx"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
-      <property name="&lt;Super&gt;KP_1" type="string" value="emacs -mm --directory /home/ricardo/Development/Tavola"/>
+      <property name="&lt;Alt&gt;KP_2" type="string" value="exo-open --working-directory /home/ricardo/Development/Tavola --launch TerminalEmulator"/>
+      <property name="&lt;Alt&gt;KP_1" type="string" value="emacs -mm --directory /home/ricardo/Development/Tavola"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
