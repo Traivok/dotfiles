@@ -1,12 +1,13 @@
 #!/bin/zsh
 
 echo "Removing"
-rm -rfv ./Xresources/* ./i3 ./polybar ./ranger
+rm -rfv ./Xresources/* ./i3 ./polybar ./ranger zshrc xfce4-keyboard-shortcuts.xml
 echo "Copying"
-cp -v ~/.extend.Xresources  ./Xresources/.extend.Xresources
+cp ~/.extend.Xresources  ./Xresources/.extend.Xresources
 cp ~/.Xresources  ./Xresources/.Xresources
 cp ~/.zshrc ./
-cp -Rv ~/.config/i3/ ./
-cp -Rv ~/.config/ranger/ ./
-cp -Rv ~/.config/polybar/ ./
+# cp -Rv ~/.config/i3/ ./
+# cp -Rv ~/.config/ranger/ ./
+# cp -Rv ~/.config/polybar/ ./
+cp -v ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ./
 echo "Finished"
