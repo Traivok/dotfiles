@@ -43,7 +43,8 @@ rofi.color-active: argb:0000000, #149bda, argb:0000000, #149bda, #1b2b34
 rofi.color-urgent: argb:0000000, #ff0066, argb:0000000, #ff0066, #1b2b34
 
 ! URxvt setup
-URxvt.perl-ext-common: fullscreen,default,matcher,keyboard-select
+URxvt.perl-ext-common: fullscreen,default,matcher,selection-to-clipboard,keyboard-select
+URxvt.clipboard.autocopy:true ! copy to clipboard
 
 URxvt.font: xft:xos4 Terminus:pixelsize=16
 URxvt.scrollBar: false
@@ -58,7 +59,15 @@ URxvt*saveLines: 500
 ! keybinds
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.F11: perl:fullscreen:switch
+! URxvt.keysym.M-u: perl:url-select:select_next
+! URxvt.keysym.M-c: perl:clipboard:copy
+! URxvt.keysym.M-v: perl:clipboard:paste
+! URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
-URxvt.url-launcher: /usr/bin/xdg-open
+
+URxvt.url-launcher: /usr/bin/xdg-open ! Open urls
+
+URxvt.url-select.launcher: firefox
+
 URxvt.matcher.button: 1
 URxvt.matcher.rend.0: Uline Bold fg5
