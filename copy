@@ -1,4 +1,4 @@
-#!/bin/env zsh
+/#!/bin/env zsh
 
 echo "Removing"
 rm -rfv ./Xresources/* ./i3 ./polybar ./ranger

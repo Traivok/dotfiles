@@ -19,7 +19,7 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
 
 #powerlevel setup
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator)
 POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}' # 21:19
 
