@@ -31,7 +31,9 @@ antigen apply
 #    1 - Alias Section       #   
 #                            #
 ##############################
-alias emacs-here="emacs -mm --directory $(pwd) &!"
+alias emacs="emacs -mm --directory $(pwd) &!"
+alias kbd="cat ~/dotfiles/urxvt-quicksheet"
+alias gc='git commit -m'
 ##############################
 #                            #
 #   (1) - End of Alias       #   

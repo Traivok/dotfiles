@@ -49,16 +49,19 @@ URxvt.clipboard.autocopy:true ! copy to clipboard
 URxvt.font: xft:xos4 Terminus:pixelsize=16
 URxvt.scrollBar: false
 
-urxvt*depth: 32
-urxvt*background: rgba:3C3C/3838/3939/D999
-
-URxvt*cursorBlink: false
+URxvt.depth: 32
+URxvt.background: rgba:3C3C/3838/3939/D999
+!URxvt.transparent: false
+  
+URxvt.cursorBlink: false
 URxvt.cursorUnderline: true
-URxvt*saveLines: 500
+URxvt.saveLines: 500
 
 ! keybinds
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.keysym.C-y: perl:clipboard:paste
+
 ! URxvt.keysym.M-u: perl:url-select:select_next
 ! URxvt.keysym.M-c: perl:clipboard:copy
 ! URxvt.keysym.M-v: perl:clipboard:paste
