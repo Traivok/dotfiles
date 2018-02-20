@@ -308,6 +308,7 @@ exec deluge
 exec --no-startup-id ~/.config/i3/br_keymap
 exec --no-startup-id nm-applet
 #exec --no-startup-id xfce4-power-manager
+exec --no-startup-id ~/.display-visor/src/display-visor.sh
 exec --no-startup-id clipit
 exec --no-startup-id pamac-tray
 # exec --no-startup-id blueman
