@@ -300,10 +300,10 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Autostart applications
-# exec_always sh $HOME/.fehbg
+exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec_always compton -f --config ~/.config/compton.conf
-# exec_always --no-startup-id ~/.display-visor/src/display-visor.sh -f -l
+exec_always --no-startup-id ~/.screenlayout/dual-monitor.sh
+exec_always compton
 # exec firefox
 # exec emacs
 # exec deluge
