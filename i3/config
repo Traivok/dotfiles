@@ -44,12 +44,12 @@ bindsym Print exec gscreenshot
 bindsym Mod1+Shift+k mode "$mode_keymap"
 set $mode_keymap (b)r abnt2, (u)s , us (i)nternational 
 mode "$mode_keymap" {
-     bindsym b exec --no-startup-id ~/.config/i3/br_keymap , mode "default"
-     bindsym u exec --no-startup-id ~/.config/i3/us_keymap , mode "default"
-     bindsym i exec --no-startup-id ~/.config/i3/us_intl_keymap , mode "default"
+bindsym b exec --no-startup-id ~/.config/i3/br_keymap , mode "default"
+bindsym u exec --no-startup-id ~/.config/i3/us_keymap , mode "default"
+bindsym i exec --no-startup-id ~/.config/i3/us_intl_keymap , mode "default"
 
-     bindsym Return mode "default"
-     bindsym Escape mode "default"
+bindsym Return mode "default"
+bindsym Escape mode "default"
 }
 
 
@@ -57,24 +57,24 @@ mode "$mode_keymap" {
 bindsym $mod+Shift+e mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+bindsym l exec --no-startup-id i3exit lock, mode "default"
+bindsym s exec --no-startup-id i3exit suspend, mode "default"
+bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+bindsym e exec --no-startup-id i3exit logout, mode "default"
+bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+bindsym r exec --no-startup-id i3exit reboot, mode "default"
+bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
-    # exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+# exit system mode: "Enter" or "Escape"
+bindsym Return mode "default"
+bindsym Escape mode "default"
 }
 
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym --release button2 kill
 
-bindsym $mod+d exec rofi -show run -lines 4 -width 32 -separator-style "dash" -matching "fuzzy" -font "San Francisco Display 16"
+bindsym $mod+d exec rofi -show run -display-run '' -lines 4 -width 32 -separator-style "dash" -matching "fuzzy" -font "San Francisco Display 16"
 
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -134,6 +134,7 @@ bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+n workspace next
 bindsym $mod+Ctrl+Left workspace prev
 bindsym $mod+p workspace prev
+bindsym $mod+Shift+w move workspace to output right
 
 # set workspace names
 set $workspace1 "1"
@@ -204,13 +205,13 @@ bindsym $mod+r mode "resize"
 
 # theme
 set $base00 #101218
-set $base01 #1f222d
-set $base02 #252936
-set $base03 #7780a1
+set $base01 #32302f
+set $base02 #282828 
+set $base03 #ffffff
 set $base04 #C0C5CE
 set $base05 #d1d4e0
 set $base06 #C9CCDB
-set $base07 #ffffff
+set $base07 #fabd2f
 set $base08 #ee829f
 set $base09 #f99170
 set $base0A #ffefcc
@@ -244,34 +245,34 @@ set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+bindsym o      mode "$mode_gaps_outer"
+bindsym i      mode "$mode_gaps_inner"
+bindsym Return mode "default"
+bindsym Escape mode "default"
 }
 mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set $innerdefault
+bindsym plus  gaps inner current plus 5
+bindsym minus gaps inner current minus 5
+bindsym 0     gaps inner current set $innerdefault
 
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set $innerdefault
+bindsym Shift+plus  gaps inner all plus 5
+bindsym Shift+minus gaps inner all minus 5
+bindsym Shift+0     gaps inner all set $innerdefault
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+bindsym Return mode "default"
+bindsym Escape mode "default"
 }
 mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set $outerdefault
+bindsym plus  gaps outer current plus 5
+bindsym minus gaps outer current minus 5
+bindsym 0     gaps outer current set $outerdefault
 
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set $outerdefault
+bindsym Shift+plus  gaps outer all plus 5
+bindsym Shift+minus gaps outer all minus 5
+bindsym Shift+0     gaps outer all set $outerdefault
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+bindsym Return mode "default"
+bindsym Escape mode "default"
 }
 
 ################################################################################################
@@ -299,13 +300,13 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Autostart applications
-exec_always sh $HOME/.fehbg
+# exec_always sh $HOME/.fehbg
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always compton -f --config ~/.config/compton.conf
-exec_always --no-startup-id ~/.display-visor/src/display-visor.sh -f -l
-exec firefox
-exec emacs
-exec deluge
+# exec_always --no-startup-id ~/.display-visor/src/display-visor.sh -f -l
+# exec firefox
+# exec emacs
+# exec deluge
 exec --no-startup-id ~/.config/i3/br_keymap
 exec --no-startup-id nm-applet
 #exec --no-startup-id xfce4-power-manager
@@ -315,7 +316,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id xautolock -time 5 -locker blurlock
 #exec_always --no-startup-id fix_xcursor
 
-exec --no-startup-id i3-msg 'workspace $workspace2; exec i3-sensible-terminal'
+exec --no-startup-id i3-msg 'workspace $workspace4; exec i3-sensible-terminal'
 exec --no-startup-id i3-msg 'workspace $workspace1; layout tabbed'
 
 # Workspace configuration
