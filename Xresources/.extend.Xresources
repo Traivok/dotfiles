@@ -3,9 +3,10 @@
 !eval: (rainbow-mode)
 !End:
 
-! COLOR PALETTE HERE !
-! hard contrast: *background: #1d2021
-*background: #282828
+! COLOR PALETTE HERE ! 
+! hard contrast:
+*background: #1d2021
+! medium *background: #282828
 ! soft contrast: *background: #32302f
 *foreground: #ebdbb2
 ! Black + DarkGrey
