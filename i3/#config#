@@ -304,8 +304,8 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always compton -f --config ~/.config/compton.conf
 exec_always --no-startup-id ~/.display-visor/src/display-visor.sh -f -l
 exec firefox
-exec emacs
-exec deluge
+exec exec
+emacs deluge
 exec --no-startup-id ~/.config/i3/br_keymap
 exec --no-startup-id nm-applet
 #exec --no-startup-id xfce4-power-manager

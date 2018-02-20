@@ -3,10 +3,9 @@
 !eval: (rainbow-mode)
 !End:
 
-! COLOR PALETTE HERE ! 
-! hard contrast:
-*background: #1d2021
-! medium *background: #282828
+! COLOR PALETTE HERE !
+! hard contrast: *background: #1d2021
+*background: #282828
 ! soft contrast: *background: #32302f
 *foreground: #ebdbb2
 ! Black + DarkGrey
@@ -34,17 +33,8 @@
 *color7:  #a89984
 *color15: #ebdbb2
 
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
-rofi.color-enabled: true
-rofi.color-window: argb:ee222222, #b33ce8, #b33ce8
-rofi.color-normal: argb:0000000, #d8dee9, argb:0000000, #b33ce8, #1b2b34
-rofi.color-active: argb:0000000, #149bda, argb:0000000, #149bda, #1b2b34
-rofi.color-urgent: argb:0000000, #ff0066, argb:0000000, #ff0066, #1b2b34
-
 ! URxvt setup
-URxvt.perl-ext-common: fullscreen,default,matcher,selection-to-clipboard,keyboard-select
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,keyboard-select,fullscreen
 URxvt.clipboard.autocopy:true ! copy to clipboard
 
 URxvt.font: xft:xos4 Terminus:pixelsize=16
@@ -62,6 +52,7 @@ URxvt.saveLines: 500
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.F11: perl:fullscreen:switch
 URxvt.keysym.C-y: perl:clipboard:paste
+URxvt.keysym.Button-2: perl:clipboard:paste
 
 ! URxvt.keysym.M-u: perl:url-select:select_next
 ! URxvt.keysym.M-c: perl:clipboard:copy
