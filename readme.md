@@ -7,7 +7,8 @@
 4. oh-my-zsh
 5. wmctrl
 6. [display-visor](https://github.com/Traivok/display-visor)
-
+7. Font Awesome
+8. Font Hack
 
 ## Urxvt keyboard-select [quicksheet](https://github.com/muennich/urxvt-perls)
 ```
