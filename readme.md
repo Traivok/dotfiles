@@ -9,6 +9,10 @@
 6. [display-visor](https://github.com/Traivok/display-visor)
 7. Font Awesome
 8. Font Hack
+9. i3-gaps
+10. i3exit
+11. Arch cursor complete
+12. Nitrogen
 
 ## Urxvt keyboard-select [quicksheet](https://github.com/muennich/urxvt-perls)
 ```
