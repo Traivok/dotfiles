@@ -1,19 +1,5 @@
 # Dotfiles
 
-## Dependencies
-1. Antigen
-2. urxvt
-3. zsh
-4. oh-my-zsh
-5. wmctrl
-6. [display-visor](https://github.com/Traivok/display-visor)
-7. Font Awesome
-8. Font Hack
-9. i3-gaps
-10. i3exit
-11. Arch cursor complete
-12. Nitrogen
-
 ## Urxvt keyboard-select [quicksheet](https://github.com/muennich/urxvt-perls)
 ```
 M-Escape: Toggle

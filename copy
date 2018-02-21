@@ -8,5 +8,6 @@ cp -Rv ~/.config/i3/ .
 cp -Rv ~/.config/ranger/ .
 cp -Rv ~/.config/polybar/ . 
 cp -v ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml .
-cp -v ~/.config/Thunar/uca.xml . # Thunar actions\
+cp -v ~/.config/Thunar/uca.xml . # Thunar actions
+cp -v ~/.config/compton.conf 
 echo "Finished"

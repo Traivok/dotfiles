@@ -40,9 +40,8 @@ URxvt.clipboard.autocopy:true ! copy to clipboard
 URxvt.font: xft:xos4 Terminus:pixelsize=16
 URxvt.scrollBar: false
 
-URxvt.depth: 32
-URxvt.background: rgba:3C3C/3838/3939/D999
-!URxvt.transparent: false
+! URxvt.depth: 32
+! URxvt.background: rgba:3C3C/3838/3939/D999
   
 URxvt.cursorBlink: false
 URxvt.cursorUnderline: true
