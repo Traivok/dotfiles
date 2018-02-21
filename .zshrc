@@ -36,6 +36,19 @@ alias kbd="cat ~/dotfiles/urxvt-quicksheet"
 alias gc='git commit -m'
 ##############################
 #                            #
-#   (1) - End of Alias       #   
+#   1 - End of Alias         #   
 #                            #
 ##############################
+
+##############################
+#                            #
+#    2 - Options Section     #   
+#                            #
+##############################
+setopt correct
+##############################
+#                            #
+#   2 - End of Options       #   
+#                            #
+##############################
+
