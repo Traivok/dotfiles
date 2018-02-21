@@ -11,7 +11,8 @@
 * Font Hack: Font used on polybar
 * i3exit: i3 exit scripts
 * Compton: Composer
-* Mpd: 
+* Mpd: Musig player daemon
+* w3m: Image preview
 
 # Auxiliar
 * Ranger: Directory navigation
@@ -19,6 +20,7 @@
 * Pacli: Pacman and Yaourt frontend
 * Htop: Proccess viewer
 * Glances: System monitor
+* Sxiv & Sxiv-rifle: Simple x image viewer
 
 # Fancy
 * [Color-Scripts](https://github.com/stark/Color-Scripts)
