@@ -16,8 +16,9 @@
 # Auxiliar
 * Ranger: Directory navigation
 * Cmus: Music
-* Htop: proccess viewer
-* Pacli: pacman/yaourt frontend
+* Pacli: Pacman and Yaourt frontend
+* Htop: Proccess viewer
+* Glances: System monitor
 
 # Fancy
 * [Color-Scripts](https://github.com/stark/Color-Scripts)
