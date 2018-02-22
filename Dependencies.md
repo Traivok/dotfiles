@@ -13,6 +13,8 @@
 * Compton: Composer
 * Mpd: Musig player daemon
 * w3m: Image preview
+* xautolock: X locker
+* trash-cli: Trash manager
 
 # Auxiliar
 * Ranger: Directory navigation

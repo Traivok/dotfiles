@@ -34,6 +34,8 @@ antigen apply
 alias emacs="emacs -mm --directory $(pwd) &!"
 alias kbd="cat ~/dotfiles/urxvt-quicksheet"
 alias gc='git commit -m'
+alias pc='pacli'
+alias rg='ranger'
 ##############################
 #                            #
 #   1 - End of Alias         #   
