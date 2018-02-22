@@ -1,0 +1,18 @@
+Feb 21 20:23 : config: option 'device' on line 14 was not recognized
+Feb 21 20:23 : exception: Failed to enable output "pulseaudio" [pulse]
+Feb 21 20:23 : exception: nested: pa_context_connect() has failed: Connection refused
+Feb 21 20:23 : avahi: Service 'Music Player' successfully established.
+Feb 21 20:24 : config: option 'device' on line 14 was not recognized
+Feb 21 20:24 : exception: Failed to enable output "pulseaudio" [pulse]
+Feb 21 20:24 : exception: nested: pa_context_connect() has failed: Connection refused
+Feb 21 20:24 : avahi: Service 'Music Player' successfully established.
+Feb 21 20:25 : config: option 'device' on line 14 was not recognized
+Feb 21 20:25 : exception: Failed to enable output "pulseaudio" [pulse]
+Feb 21 20:25 : exception: nested: pa_context_connect() has failed: Connection refused
+Feb 21 20:25 : avahi: Service 'Music Player' successfully established.
+Feb 21 20:29 : client: [0] opened from 127.0.0.1:59128
+Feb 21 20:29 : client: [0] closed
+Feb 21 20:29 : client: [1] opened from 127.0.0.1:59132
+Feb 21 20:29 : client: [1] closed
+Feb 21 20:31 : client: [2] opened from 127.0.0.1:59214
+Feb 21 20:31 : client: [2] closed

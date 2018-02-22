@@ -1,13 +1,15 @@
 #!/bin/zsh
 
 echo "Copying"
-cp ~/.extend.Xresources  ./Xresources/.extend.Xresources
-cp ~/.Xresources  ./Xresources/.Xresources
-cp ~/.zshrc .
+cp -v ~/.extend.Xresources  ./Xresources/.extend.Xresources
+cp -v ~/.Xresources  ./Xresources/.Xresources
+cp -v ~/.zshrc .
 cp -Rv ~/.config/i3/ .
 cp -Rv ~/.config/ranger/ .
 cp -Rv ~/.config/polybar/ . 
 cp -v ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml .
 cp -v ~/.config/Thunar/uca.xml . # Thunar actions
-cp -v ~/.config/compton.conf 
+cp -v ~/.config/compton.conf
+cp -Rv ~/.config/mpd/ ./mpd
+cp -Rv ~/.config/ncmpcpp/ ./ncmpcpp 
 echo "Finished"
