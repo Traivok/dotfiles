@@ -9,7 +9,8 @@ cp -Rv ~/.config/ranger/ .
 cp -Rv ~/.config/polybar/ . 
 cp -v ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml .
 cp -v ~/.config/Thunar/uca.xml . # Thunar actions
-cp -v ~/.config/compton.conf
+cp -v ~/.config/compton.conf .
 cp -Rv ~/.config/mpd/mpd.conf ./mpd
 cp -Rv ~/.config/ncmpcpp/ ./ncmpcpp 
+cp -Rv ~/.config/screenlayout/ ./screenlayout
 echo "Finished"
