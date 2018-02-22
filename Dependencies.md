@@ -15,6 +15,7 @@
 * w3m: Image preview
 * xautolock: X locker
 * trash-cli: Trash manager
+* Pulse audio: enable networking tcp 127.0.0.1
 
 # Auxiliar
 * Ranger: Directory navigation

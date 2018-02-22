@@ -307,7 +307,7 @@ exec_always --no-startup-id compton --config  ~/.config/compton.conf
 # exec firefox
 # exec emacs
 # exec deluge
-exec --no-startup-id ~/.config/i3/br_keymap
+exec --no-startup-id ~/.config/i3/us_intl_keymap
 exec --no-startup-id nm-applet
 #exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit
@@ -315,10 +315,11 @@ exec --no-startup-id pamac-tray
 # exec --no-startup-id blueman
 exec --no-startup-id xautolock -time 5 -locker blurlock
 exec mpd ~/.config/mpd/mpd.conf
+exec --no-startup-id i3-msg 'exec /usr/bin/pulseaudio --start'
 #exec_always --no-startup-id fix_xcursor
 
 exec --no-startup-id i3-msg 'workspace $workspace4; exec i3-sensible-terminal'
-exec --no-startup-id i3-msg 'workspace $workspace1; layout tabbed'
+
 
 # Workspace configuration
 assign [class="Emacs"] $workspace3
