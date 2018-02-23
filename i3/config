@@ -52,6 +52,25 @@ bindsym Return mode "default"
 bindsym Escape mode "default"
 }
 
+# open work folder
+bindsym $mod+Shift+T mode "$mode_dev"
+set $mode_dev 1 - Development, 2 - Config, 3 - Emacs, 4 - Tavola, 5 - Dotfiles, 0 - Exit
+mode "$mode_dev" {
+bindsym 1 exec "cd ~/Development && i3-sensible-terminal"
+bindsym 2 exec "cd ~/.config && i3-sensible-terminal"
+bindsym 3 exec "cd ~/.emacs.d && i3-sensible-terminal"
+bindsym 4 exec "cd ~/Development/Tavola && i3-sensible-terminal"
+bindsym 5 exec "cd ~/dotfiles && i3-sensible-terminal"
+	       
+bindsym 6 mode "default"
+bindsym 7 mode "default"
+bindsym 8 mode "default"
+bindsym 9 mode "default"
+
+bindsym 0 mode "default"
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}
 
 # Set shut down, restart and locking features
 bindsym $mod+Shift+e mode "$mode_system"
@@ -301,7 +320,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Autostart applications
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec_always --no-startup-id sh ~/.config/screenlayout/monitor.sh
+exec_always --no-startup-id ~/.config/screenlayout/monitor.sh
 exec_always --no-startup-id compton --config  ~/.config/compton.conf
 # exec firefox
 # exec emacs
