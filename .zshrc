@@ -36,6 +36,9 @@ alias kbd="cat ~/dotfiles/urxvt-quicksheet"
 alias gc='git commit -m'
 alias pc='pacli'
 alias rg='ranger'
+alias dev='cd ~/Development/'
+alias tavola='cd ~/Development/Tavola/'
+alias tavola-start='sudo forever --watch --watchDirectory ./app ./app/app.js'
 ##############################
 #                            #
 #   1 - End of Alias         #   

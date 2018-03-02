@@ -78,7 +78,7 @@ wm-restack = i3
 
 [bar/second_bar]
 monitor = LVDS1
-monitor-fallback = 0
+; monitor-fallback = 0
 bottom = false
 ;width = 90%
 width = 100%

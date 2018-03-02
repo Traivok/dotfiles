@@ -13,4 +13,6 @@ cp -v ~/.config/compton.conf .
 cp -Rv ~/.config/mpd/mpd.conf ./mpd
 cp -Rv ~/.config/ncmpcpp/ ./ncmpcpp 
 cp -Rv ~/.config/screenlayout/ ./screenlayout
+
+cp -Rv ~/Pictures/Wallpaper/ ./
 echo "Finished"

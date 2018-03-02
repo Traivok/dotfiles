@@ -1,11 +1,13 @@
 #!/bin/bash
 
+myLock='i3lock -i /home/ricardo/Pictures/Wallpaper/lockscreenblur.png '
+
 # with openrc use loginctl
 [[ $(cat /proc/1/comm) == "systemd" ]] && logind=systemctl || logind=loginctl
 
 case "$1" in
     lock)
-        blurlock
+        $myLock
         ;;
     logout)
         i3-msg exit
@@ -14,10 +16,10 @@ case "$1" in
     	dm-tool switch-to-greeter
     	;;
     suspend)
-        blurlock && $logind suspend
+        $myLock && $logind suspend
         ;;
     hibernate)
-    	blurlock && $logind hibernate
+    	$myLock && $logind hibernate
         ;;
     reboot)
         $logind reboot
