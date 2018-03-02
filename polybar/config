@@ -63,7 +63,7 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = pkg pavolume wireless-network wired-network battery exit
+modules-right = pkg pavolume battery exit
 
 tray-position = none
 tray-padding = 8
@@ -110,9 +110,9 @@ font-0 = Hack:fontformat=truetype:size=9;1
 font-1 = Hack:fontformat=truetype:size=9;1
 font-2 = FontAwesome:fontformat=truetype:size=9;1
 
-; modules-left = 
-modules-center = i3
-; modules-right = pkg pavolume wireless-network wired-network battery exit
+modules-left = network wireless-network wired-network
+modules-center = i3 
+modules-right = mpd 
 
 tray-position = none
 tray-padding = 8
@@ -289,11 +289,8 @@ click-middle = ~/.config/polybar/exit.sh logout
 [module/network]
 type = internal/network
 
-interval = 3.0
-udspeed-minwidth = 5
-accumulate-stats = true
-
 label-connected-foreground = #eefafafa
+interval = 1.0
 
 ; Only applies if <animation-packetloss> is used
 animation-packetloss-0 = 
@@ -307,10 +304,41 @@ animation-packetloss-framerate = 500
 type = internal/network
 interface = enp9s0
 inherit = module/network
-label-connected = "%{A1:nm-connection-editor:} - %{A}"
+label-connected = "%{A1:nm-connection-editor:}%{A} %downspeed:8%  "
 
 [module/wireless-network]
 type = internal/network
 interface = wlp6s0
 inherit = module/network
-label-connected = "%{A1:nm-connection-editor:} - %{A}"
+label-connected = "   %{A1:nm-connection-editor:} %{A}  "
+
+[module/mpd]
+type = internal/mpd
+
+host = 127.0.0.1
+port = 6600
+; password = mysecretpassword
+
+format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+format-playing = ${self.format-online}
+format-paused = ${self.format-online}
+format-stopped = ${self.format-online}
+label-song = 𝄞 %artist% - %title%
+label-time = %elapsed% / %total%
+
+icon-play = ⏵
+icon-pause = ⏸
+icon-stop = ⏹
+icon-prev = ⏮
+icon-next = ⏭
+icon-seekb = ⏪
+icon-seekf = ⏩
+icon-random = 🔀
+icon-repeat = 🔁
+icon-repeatone = 🔂
+icon-consume = ✀
+
+bar-progress-width = 45
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─

@@ -16,6 +16,7 @@
 * xautolock: X locker
 * trash-cli: Trash manager
 * Pulse audio: enable networking tcp 127.0.0.1
+* wired_tools: Polybar networking
 
 # Auxiliar
 * Ranger: Directory navigation
