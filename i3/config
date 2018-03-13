@@ -331,18 +331,18 @@ exec --no-startup-id nm-applet
 exec --no-startup-id clipit
 exec --no-startup-id pamac-tray
 # exec --no-startup-id blueman
-exec --no-startup-id xautolock -time 5 -locker blurlock
+exec --no-startup-id xautolock -time 5 -locker 'i3lock -i /home/ricardo/Pictures/Wallpaper/lockscreenblur.png'
 exec mpd ~/.config/mpd/mpd.conf
 exec --no-startup-id i3-msg 'exec /usr/bin/pulseaudio --start'
 exec --no-startup-id mpd ~/.config/mpd/mpd.conf
 #exec_always --no-startup-id fix_xcursor
 
 # Workspace configuration
+# assign [class="Firefox"] $workspace2
 assign [class="Emacs"] $workspace3
-assign [class="Firefox"] $workspace2
-assign [class="Deluge"] $workspace6
-assign [class="mpv"] $workspace5
-assign [class="Steam"] $workspace7
+assign [class="mpv"] $workspace6
+assign [class="Deluge"] $workspace7
+assign [class="Steam"] $workspace8
 
 
 # enable floating defaults

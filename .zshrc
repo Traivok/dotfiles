@@ -51,6 +51,7 @@ alias tavola-start='sudo forever --watch --watchDirectory ./app ./app/app.js'
 #                            #
 ##############################
 setopt correct
+export EDITOR=vim
 ##############################
 #                            #
 #   2 - End of Options       #   
