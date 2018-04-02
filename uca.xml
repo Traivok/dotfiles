@@ -3,7 +3,7 @@
 <action>
 	<icon>Terminal</icon>
 	<name>Terminal</name>
-	<unique-id>1517027863087265-3</unique-id>
+	<unique-id>1367866030392833-1</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description></description>
 	<patterns>*</patterns>
@@ -24,34 +24,6 @@
 	<unique-id>1367866030392913-3</unique-id>
 	<command>catfish %f</command>
 	<description>find files and folders</description>
-	<patterns>*</patterns>
-	<directories/>
-</action>
-<action>
-	<icon></icon>
-	<name>Run sh</name>
-	<unique-id>1506783947710926-1</unique-id>
-	<command>sh %f</command>
-	<description></description>
-	<patterns>*.sh</patterns>
-	<other-files/>
-	<text-files/>
-</action>
-<action>
-	<icon></icon>
-	<name>feh</name>
-	<unique-id>1517027821047763-2</unique-id>
-	<command>feh</command>
-	<description></description>
-	<patterns>*</patterns>
-	<directories/>
-</action>
-<action>
-	<icon>emacs</icon>
-	<name>emacs</name>
-	<unique-id>1517027902288216-5</unique-id>
-	<command>emacs --directory %f</command>
-	<description></description>
 	<patterns>*</patterns>
 	<directories/>
 </action>

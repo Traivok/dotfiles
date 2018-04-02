@@ -39,15 +39,7 @@
       <property name="XF86Calculator" type="string" value="galculator"/>
       <property name="Super_L" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="Super_R" type="string" value="xfce4-popup-whiskermenu"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;b" type="string" value="setxkbmap -model abnt2 -layout br -variant abnt2"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;i" type="string" value="setxkbmap -model pc104 -layout us -variant intl"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;u" type="string" value="setxkbmap -model pc104 -layout us "/>
-      <property name="Print" type="string" value="gscreenshot"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;e" type="string" value="emacs -mm"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;w" type="string" value="firefox"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;k" type="string" value="keepassx"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
-      <property name="&lt;Alt&gt;KP_1" type="string" value="exo-open --working-directory /home/ricardo/Development/Tavola --launch TerminalEmulator"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="urxvt"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

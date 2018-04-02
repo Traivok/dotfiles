@@ -29,7 +29,7 @@ my_color15	= ${xrdb:color15}
 
 [bar/main_bar]
 monitor = HDMI1
-monitor-fallback = LVDS1
+monitor-fallback = eDP1
 bottom = false
 ;width = 90%
 width = 100%
@@ -77,7 +77,7 @@ tray-background = ${colors.my_background}
 wm-restack = i3
 
 [bar/second_bar]
-monitor = LVDS1
+monitor = eDP1
 ; monitor-fallback = 0
 bottom = false
 ;width = 90%

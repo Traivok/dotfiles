@@ -1,4 +1,4 @@
-source /usr/share/zsh/share/antigen.zsh
+source /home/ricardo/.antigen.zsh
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 
 # Load the oh-my-zsh's library.
