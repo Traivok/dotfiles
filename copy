@@ -3,6 +3,7 @@
 echo "Copying"
 cp -v ~/.extend.Xresources  ./Xresources/.extend.Xresources
 cp -v ~/.Xresources  ./Xresources/.Xresources
+cp -v ~/.config/rofi/config  .
 cp -v ~/.zshrc .
 cp -Rv ~/.config/i3/ .
 cp -Rv ~/.config/ranger/ .
