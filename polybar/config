@@ -1,4 +1,4 @@
-0;-------------------------------------------------
+;-------------------------------------------------
 ;                                                ;
 ;           Polybar config for my themes         ;
 ; 				                 ;
@@ -63,7 +63,8 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = pkg pavolume battery exit
+modules-right = network wireless-network wired-network pkg pavolume battery exit
+
 
 tray-position = none
 tray-padding = 8
@@ -110,7 +111,7 @@ font-0 = Hack:fontformat=truetype:size=9;1
 font-1 = Hack:fontformat=truetype:size=9;1
 font-2 = FontAwesome:fontformat=truetype:size=9;1
 
-modules-left = network wireless-network wired-network
+modules-left = 
 modules-center = i3 
 modules-right = mpd 
 
@@ -302,15 +303,17 @@ animation-packetloss-framerate = 500
 
 [module/wired-network]
 type = internal/network
-interface = enp9s0
+interface = enp2s0
 inherit = module/network
 label-connected = "%{A1:nm-connection-editor:}%{A} %downspeed:8%  "
 
 [module/wireless-network]
 type = internal/network
-interface = wlp6s0
+interface = wlp3s0
 inherit = module/network
 label-connected = "   %{A1:nm-connection-editor:} %{A}  "
+label-disconnected = "   %{A1:nm-connection-editor:} %{A}  "
+label-disconnected-foreground = ${colors.my_color2}
 
 [module/mpd]
 type = internal/mpd
