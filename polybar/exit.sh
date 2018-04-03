@@ -1,6 +1,13 @@
 #!/bin/bash
 
-myLock='i3lock -i /home/ricardo/Pictures/Wallpaper/lockscreenblur.png '
+myLock= 'blurlock'
+
+if [ xrandr | grep -q 'HDMI1 connected' ]; ]
+then
+    myLock='i3lock -i /home/ricardo/Pictures/Wallpaper/lockscreenblur.png '
+else
+    myLock='i3lock -i /home/ricardo/Pictures/Wallpaper/monolockscreenblur.jpg '
+fi
 
 # with openrc use loginctl
 [[ $(cat /proc/1/comm) == "systemd" ]] && logind=systemctl || logind=loginctl
