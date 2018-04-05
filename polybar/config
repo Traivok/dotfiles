@@ -63,7 +63,7 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = network wireless-network wired-network pkg pavolume battery exit
+modules-right = pkg network wireless-network wired-network pavolume battery exit
 
 
 tray-position = none
