@@ -196,11 +196,11 @@ format-full-background = ${colors.my_background}
 format-full = " - "
 
 format-charging-background = ${colors.my_background}
-format-charging = "⁣<label-charging> <animation-charging> - "
+format-charging = "⁣<animation-charging> <label-charging> - "
 ;format-charging-underline = ${colors.my_color2}
 
 format-discharging-background = ${colors.my_background}
-format-discharging = "⁣<label-discharging> <ramp-capacity> - "
+format-discharging = "⁣<ramp-capacity> <label-discharging> - "
 ;format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix-foreground = ${colors.my_background}
@@ -311,9 +311,9 @@ label-connected = "%{A1:nm-connection-editor:}%{A} %downspeed:8%  "
 type = internal/network
 interface = wlp3s0
 inherit = module/network
-label-connected = "   %{A1:nm-connection-editor:} %{A}  "
-label-disconnected = "   %{A1:nm-connection-editor:} %{A}  "
-label-disconnected-foreground = ${colors.my_color2}
+label-connected = "   %{A1:nmtui-connect:} %{A}  "
+; label-disconnected = "   %{A1:nmtui-connect:} %{A}  "
+; label-disconnected-foreground = ${colors.my_color2}
 
 [module/mpd]
 type = internal/mpd
