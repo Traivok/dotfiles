@@ -1,4 +1,4 @@
-;-------------------------------------------------
+\;-------------------------------------------------
 ;                                                ;
 ;           Polybar config for my themes         ;
 ; 				                 ;
@@ -63,7 +63,7 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = pkg network wireless-network wired-network pavolume battery exit
+modules-right = pkg network wireless-network wired-network backlight pavolume battery exit
 
 
 tray-position = none
@@ -227,7 +227,7 @@ animation-charging-framerate = 750
 type = custom/script
 interval = 300
 format = <label>
-label = "%output% - "
+label = "%output%  -"
 exec = .config/polybar/pkg.sh
 exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
 
@@ -345,3 +345,9 @@ bar-progress-width = 45
 bar-progress-indicator = |
 bar-progress-fill = ─
 bar-progress-empty = ─
+
+[module/backlight]
+type = internal/xbacklight
+
+format = "  <label> "
+label = %percentage%%

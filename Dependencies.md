@@ -18,6 +18,8 @@
 * Pulse audio: enable networking tcp 127.0.0.1
 * wired tools: Polybar networking
 * rofi: launcher
+* xorg-xbacklight: change brightness
+* xorg-xev: Extra keyboards events
 
 # Auxiliar
 * Ranger: Directory navigation
