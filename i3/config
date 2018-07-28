@@ -298,14 +298,14 @@ bindsym Escape mode "default"
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 #exec --no-startup-id volumeicon
-#bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+bindsym $mod+Ctrl+s exec terminal -e 'alsamixer'
 exec --no-startup-id pulseaudio
 exec --no-startup-id pa-applet
-bindsym $mod+Ctrl+m exec pavucontrol
+# bindsym $mod+Ctrl+m exec pavucontrol
 set $active_sink pacmd list-sinks |awk '/* index:/{print $3}'
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/polybar/pavolume.sh --up #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/polybar/pavolume.sh --down #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec "/home/ricardo/.config/i3/volcontrol.sh up"
+bindsym XF86AudioLowerVolume exec "/home/ricardo/.config/i3/volcontrol.sh down"
+bindsym XF86AudioMute exec "/home/ricardo/.config/i3/volcontrol.sh toggle"
 ################################################################################################
 
 # Sreen brightness controls
@@ -319,8 +319,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Autostart applications
-exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ~/.config/screenlayout/monitor.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id compton --config  ~/.config/compton.conf
 exec --no-startup-id xset -b
 # exec firefox
@@ -334,9 +334,9 @@ exec --no-startup-id pamac-tray
 # exec --no-startup-id blueman
 exec --no-startup-id xautolock -time 10 -locker 'blurlock'
 exec mpd ~/.config/mpd/mpd.conf
-exec --no-startup-id i3-msg 'exec /usr/bin/pulseaudio --start'
+exec --no-startup-id i3-msg 'exec /usr/bin/pulseaudio -D --system'
 exec --no-startup-id mpd ~/.config/mpd/mpd.conf
-#exec_always --no-startup-id fix_xcursor
+exec_always --no-startup-id fix_xcursor
 
 # Workspace configuration
 # assign [class="Firefox"] $workspace2
