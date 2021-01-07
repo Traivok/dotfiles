@@ -1,19 +1,32 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 
-echo "Copying"
-cp -v ~/.extend.Xresources  ./Xresources/.extend.Xresources
-cp -v ~/.Xresources  ./Xresources/.Xresources
-cp -v ~/.config/rofi/config  .
-cp -v ~/.zshrc .
-cp -Rv ~/.config/i3/ .
-cp -Rv ~/.config/ranger/ .
-cp -Rv ~/.config/polybar/ . 
-cp -v ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml .
-cp -v ~/.config/Thunar/uca.xml . # Thunar actions
-cp -v ~/.config/compton.conf .
-cp -Rv ~/.config/mpd/mpd.conf ./mpd
-cp -Rv ~/.config/ncmpcpp/ ./ncmpcpp 
-cp -Rv ~/.config/screenlayout/ ./screenlayout
+backup() {
+    
+    DIR=$1
+    PATHS=$2
+    TARGET=$3
 
-cp -Rv ~/Pictures/Wallpaper/ ./
-echo "Finished"
+    shift; shift;
+
+    for PATH in $PATHS; do
+        /usr/bin/cp -rp "$DIR/$PATH" "$TARGET"
+    done
+}
+
+PATHS=".Xresources .extend.Xresources .zshrc .zsh_aliases .p10k.zsh .vimrc .emacs.d"
+DIR=$HOME
+TARGET="./dots"
+
+backup "${DIR}" "${PATHS}" "$TARGET"
+
+DIR="$HOME/.config"
+PATHS="nitrogen ncmpcpp rofi polybar i3 ranger"
+TARGET="./config"
+
+backup "${DIR}" "${PATHS}" "$TARGET"
+
+PATHS="/etc/mopidy/mopidy.conf"
+
+for PATH in $PATHS; do
+    echo "copy $PATH manually and omit its secrets"
+done

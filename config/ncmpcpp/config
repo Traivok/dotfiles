@@ -1,0 +1,19 @@
+# MPD
+mpd_music_dir = "/home/ricardo/Music"  
+ncmpcpp_directory  = "/home/ricardo/.config/ncmpcpp"
+mpd_host = "localhost"
+mpd_port = "5555"  
+mpd_connection_timeout = "5"  
+mpd_crossfade_time = "5"  
+
+# Visualizer
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "mpd.fifo"
+visualizer_sync_interval = "12"
+visualizer_type = "spectrum"
+visualizer_in_stereo = "yes"
+visualizer_look = "+|"
+
+# Other
+system_encoding = "utf-8"
+regular_expressions = "extended"

@@ -1,0 +1,4 @@
+export ais='ec2-user@ec2-35-166-153-123.us-west-2.compute.amazonaws.com'
+export smartlps='ec2-user@ec2-35-166-153-123.us-west-2.compute.amazonaws.com'
+
+alias nvp='$HOME/Development/Navalport'
