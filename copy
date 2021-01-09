@@ -13,7 +13,7 @@ backup() {
     done
 }
 
-PATHS=".Xresources .extend.Xresources .zshrc .zsh_aliases .p10k.zsh .vimrc .emacs.d"
+PATHS=".Xresources .extend.Xresources .zshrc .zsh_aliases .p10k.zsh .vimrc"
 DIR=$HOME
 TARGET="./dots"
 

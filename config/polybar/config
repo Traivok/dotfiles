@@ -97,8 +97,8 @@ font-0 = Hack:fontformat=truetype:size=9;1
 font-1 = Hack:fontformat=truetype:size=9;1
 font-2 = FontAwesome:fontformat=truetype:size=9;1
 
-modules-left = 
-modules-center = i3 
+modules-left = i3  
+modules-center = date 
 modules-right = mpd 
 
 tray-position = none
@@ -286,26 +286,15 @@ type = internal/mpd
 host = 127.0.0.1
 port = 5555
 
-format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+format-online = <bar-progress> <label-song>
 format-playing = ${self.format-online}
 format-paused = ${self.format-online}
 format-stopped = ${self.format-online}
-label-song = %artist% - %title%
-label-time = %elapsed% / %total%
+label-song = " %artist% - %title%"
 
-icon-play = ⏵
-icon-pause = ⏸
-icon-stop = ⏹
-icon-prev = ⏮
-icon-next = ⏭
-icon-seekb = ⏪
-icon-seekf = ⏩
-icon-random = 🔀
-icon-repeat = 🔁
-icon-repeatone = 🔂
-icon-consume = ✀
+format-online-padding = 2
 
-bar-progress-width = 45
+bar-progress-width = 20
 bar-progress-indicator = o
 bar-progress-fill = ─
 bar-progress-empty = ─
