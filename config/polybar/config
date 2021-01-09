@@ -1,54 +1,42 @@
-;------------------------------------------------;
-;                                                ;
-;           Polybar config for my themes         ;
-; 				                 ;
-;                                                ;
-;------------------------------------------------;
-
 [colors]
-;My colors are set from .Xresources to match everything else
-my_background 	= ${xrdb:background}
-my_foreground 	= ${xrdb:foreground}
-my_color0	= ${xrdb:color0}
-my_color1	= ${xrdb:color1}
-my_color2	= ${xrdb:color3}
-my_color3	= ${xrdb:color2}
-my_color4	= ${xrdb:color4}
-my_color5	= ${xrdb:color5}
-my_color6	= ${xrdb:color6}
-my_color7	= ${xrdb:color7}
-my_color8	= ${xrdb:color8}
-my_color9	= ${xrdb:color9}
-my_color10	= ${xrdb:color10}
-my_color11	= ${xrdb:color11}
-my_color12	= ${xrdb:color12}
-my_color13	= ${xrdb:color13}
-my_color14	= ${xrdb:color14}
-my_color15	= ${xrdb:color15}
+background 	= ${xrdb:background}
+foreground 	= ${xrdb:foreground}
+color0	= ${xrdb:color0}
+color1	= ${xrdb:color1}
+color2	= ${xrdb:color3}
+color3	= ${xrdb:color2}
+color4	= ${xrdb:color4}
+color5	= ${xrdb:color5}
+color6	= ${xrdb:color6}
+color7	= ${xrdb:color7}
+color8	= ${xrdb:color8}
+color9	= ${xrdb:color9}
+color10	= ${xrdb:color10}
+color11	= ${xrdb:color11}
+color12	= ${xrdb:color12}
+color13	= ${xrdb:color13}
+color14	= ${xrdb:color14}
+color15	= ${xrdb:color15}
 
 [bar/main_bar]
 monitor = HDMI-1
 monitor-fallback = eDP-1
 bottom = false
-;width = 90%
 width = 100%
 height = 25
-;offset-x = 5%
-;offset-y = 1%
 offset-x = 0
 offset-y = 0
 radius = 0.0
 fixed-center = true
 
-background = ${colors.my_background}
-;foreground = ${colors.my_foreground}
-foreground =  ${colors.my_foreground}
+background = ${colors.background}
+foreground =  ${colors.foreground}
 
 line-size = 4
-line-color = ${colors.my_color2}
+line-color = ${colors.color2}
 
 border-size = 0
-border-color = ${colors.my_color2}
+border-color = ${colors.color2}
 
 padding-left = 0
 padding-right = 0
@@ -62,7 +50,7 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = network wireless-network wired-network backlight pavolume battery exit
+modules-right = network wired-network wireless-network pulseaudio battery exit
 
 
 tray-position = none
@@ -72,7 +60,7 @@ tray-offset-y = 0%
 tray-offset-x = 0%
 tray-maxsize = 18
 tray-detached = false
-tray-background = ${colors.my_background}
+tray-background = ${colors.background}
 
 wm-restack = i3
 
@@ -90,15 +78,14 @@ offset-y = 0
 radius = 0.0
 fixed-center = true
 
-background = ${colors.my_background}
-;foreground = ${colors.my_foreground}
-foreground =  ${colors.my_foreground}
+background = ${colors.background}
+foreground =  ${colors.foreground}
 
 line-size = 4
-line-color = ${colors.my_color2}
+line-color = ${colors.color2}
 
 border-size = 0
-border-color = ${colors.my_color2}
+border-color = ${colors.color2}
 
 padding-left = 0
 padding-right = 0
@@ -121,41 +108,39 @@ tray-offset-y = 0%
 tray-offset-x = 0%
 tray-maxsize = 18
 tray-detached = false
-tray-background = ${colors.my_background}
+tray-background = ${colors.background}
 
 wm-restack = i3
-
-;override-redirect = true
 
 [module/i3]
 type = internal/i3
 
 formart = <label-state> <label-mode>
 pin-workspaces = true
-label-unfocused-background = ${colors.my_background}
-label-unfocused-foreground = ${colors.my_foreground}
+label-unfocused-background = ${colors.background}
+label-unfocused-foreground = ${colors.foreground}
 
 label-mode = %mode%
 label-mode-padding = 2
-label-mode-background = ${colors.my_color2}
+label-mode-background = ${colors.color2}
 
 label-focused = %index%
-label-focused-foreground = ${colors.my_color2}
-label-focused-background = ${colors.my_background}
-label-focused-underline = ${colors.my_background}
+label-focused-foreground = ${colors.color2}
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.background}
 label-focused-padding = 2
 
 label-unfocused = %index%
 label-unfocused-padding = 2
 
 label-visible = %index%
-label-visible-underline = ${colors.my_foreground}
+label-visible-underline = ${colors.foreground}
 label-visible-padding = 4
 
 label-urgent = %index%
-label-urgent-foreground = ${colors.my_foreground}
-label-urgent-background = ${colors.my_background}
-label-urgent-underline = ${colors.my_color8}
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.background}
+label-urgent-underline = ${colors.color8}
 label-urgent-padding = 2
 
 [module/date]
@@ -169,8 +154,8 @@ time = "%a %b %d, %H:%M"
 
 time-alt = %H:%M:%S
 
-format-prefix-foreground = ${colors.my_foreground}
-format-underline = ${colors.my_color2}
+format-prefix-foreground = ${colors.foreground}
+format-underline = ${colors.color2}
 
 label = %date% %time%
 
@@ -180,37 +165,33 @@ battery = BAT0
 adapter = AC
 full-at = 99
 
-format-padding = 2
+format-full-background = ${colors.background}
+format-full = ""
+format-full-padding = 2
 
-format-full-background = ${colors.my_background}
-format-full = " "
-
-format-charging-background = ${colors.my_background}
+format-charging-background = ${colors.background}
 format-charging = "⁣<animation-charging> <label-charging>"
-;format-charging-underline = ${colors.my_color2}
+format-charging-padding = 2
 
-format-discharging-background = ${colors.my_background}
+format-discharging-background = ${colors.background}
 format-discharging = "⁣<ramp-capacity> <label-discharging>"
-;format-discharging-underline = ${self.format-charging-underline}
+format-discharging-padding = 2
 
-format-full-prefix-foreground = ${colors.my_background}
-;format-full-underline = ${self.format-charging-underline}
-
-format-charing-background = ${colors.my_background}
+format-full-prefix-foreground = ${colors.background}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = ${colors.my_foreground}
+ramp-capacity-foreground = ${colors.foreground}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
-animation-charging-foreground = ${colors.my_foreground}
+animation-charging-foreground = ${colors.foreground}
 animation-charging-framerate = 750
 
 [settings]
@@ -228,37 +209,65 @@ margin-bottom = 5
 type = internal/xwindow
 label = %title:0:30:...%
 label-padding = 10
-;label-underline = ${colors.my_color7}
-label-foreground = ${colors.my_foreground}
-;label-foreground = ${colors.my_color7}
+label-foreground = ${colors.foreground}
 
-; [module/pomodoro]
-; type = custom/script
-; ; Use pomodoro glyphs in Nerd fonts
-; exec = pymodoro --break-prefix " " --pomodoro-prefix " " --pomodoro  --empty  --break  --length 5
-; ; Use default symbols
-; ; exec = pymodoro --length 5e
-; label = %output%
-; tail = true
-; interval = 0
-; ; Start or reset the timer
-; click-left = if [ -e ~/.pomodoro_session ]; then rm ~/.pomodoro_session; else echo "25 5" > ~/.pomodoro_session; fi
-; ; Increase pomodoro time
-; click-right = echo "$((`cut .pomodoro_session -d ' ' -f 1`+5)) 5" > .pomodoro_session
-; ; Reduce pomodoro time
-; click-middle = echo "$((`cut .pomodoro_session -d ' ' -f 1`-5)) 5" > .pomodoro_session
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 5
 
-[module/pavolume]
-type = custom/script
-interval = 0
-label = " %output%"
-format-padding = 2
-;format-underline = ${colors.my_color2}
-exec = ~/.config/polybar/pavolume.sh
-click-right = exec pavucontrol
-click-left = ~/.config/polybar/pavolume.sh --togmute
-scroll-up = ~/.config/polybar/pavolume.sh --up
-scroll-down = ~/.config/polybar/pavolume.sh --down
+format-volume= "<ramp-volume> <bar-volume>"
+format-volume-padding = 2
+format-muted = <label-muted>
+format-muted-padding = 2
+
+use-ui-max = false
+click-right = pavucontrol
+click-middle = pavulcontrol
+
+label-muted = 
+label-volume =  
+ramp-volume-0 =  
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+bar-volume-width = 10
+bar-volume-indicator = o
+bar-volume-fill = ─
+bar-volume-empty = ─
+bar-volume-fill-foreground = ${colors.color2}
+bar-volume-empty-foreground = ${colors.foreground}
+bar-volume-indicator-foreground = ${colors.foreground}
+bar-volume-indicator-background = ${colors.background}
+
+[module/network]
+type = internal/network
+format-connected-padding = 2
+format-disconnected-padding = 2
+format-connected-foreground =  ${colors.foreground}
+format-disconnected-foreground = ${colors.color8}
+
+
+[module/wired-network]
+type = internal/network
+inherit = module/network
+interface = enp2s0
+label-connected = " %downspeed:8%"
+fomart-connected-padding = 2
+label-disconnected ""
+format-disconnected-padding = 2
+
+[module/wireless-network]
+type = internal/network
+inherit module/network
+interface = wlp3s0
+format-connected = <ramp-signal>
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 =   
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-5 = 
 
 [module/exit]
 type = custom/script
@@ -266,51 +275,22 @@ interval = 0
 format-padding = 2
 label = "%output%"
 exec = echo ""
-;format-underline = ${colors.my_color2}
 click-right = ~/.config/polybar/exit.sh switch_user
 click-left = ~/.config/polybar/exit.sh lock
 click-middle = ~/.config/polybar/exit.sh logout
 
-[module/network]
-type = internal/network
-
-label-connected-foreground = #eefafafa
-interval = 1.0
-
-; Only applies if <animation-packetloss> is used
-animation-packetloss-0 = 
-animation-packetloss-0-foreground = ${my_foreground}
-animation-packetloss-1 = 
-animation-packetloss-1-foreground = ${my_foreground}
-; Framerate in milliseconds
-animation-packetloss-framerate = 500
-
-[module/wired-network]
-type = internal/network
-interface = enp2s0
-inherit = module/network
-label-connected = "%{A1:nm-connection-editor:}%{A} %downspeed:8%  "
-
-[module/wireless-network]
-type = internal/network
-interface = wlp3s0
-inherit = module/network
-label-connected = "   %{A1:nmtui-connect:} %{A}  "
-; label-disconnected = "   %{A1:nmtui-connect:} %{A}  "
-; label-disconnected-foreground = ${colors.my_color2}
 
 [module/mpd]
 type = internal/mpd
 
 host = 127.0.0.1
-port = 6600
-; password = mysecretpassword
+port = 5555
 
 format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
 format-playing = ${self.format-online}
 format-paused = ${self.format-online}
 format-stopped = ${self.format-online}
-label-song = 𝄞 %artist% - %title%
+label-song = %artist% - %title%
 label-time = %elapsed% / %total%
 
 icon-play = ⏵
@@ -326,12 +306,7 @@ icon-repeatone = 🔂
 icon-consume = ✀
 
 bar-progress-width = 45
-bar-progress-indicator = |
+bar-progress-indicator = o
 bar-progress-fill = ─
 bar-progress-empty = ─
-
-[module/backlight]
-type = internal/xbacklight
-
-format = "  <label> "
-label = %percentage%%
+bar-progress-fill-foreground = ${colors.color2}

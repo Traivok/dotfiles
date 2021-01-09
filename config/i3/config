@@ -120,6 +120,10 @@ bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
 
+# screens
+workspace 1 output HDMI-1 eDP-1
+workspace 2 output eDP-1 HDMI-1
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -240,21 +244,6 @@ mode "$mode_gaps_outer" {
     bindsym Escape mode "default"
 }
 
-################################################################################################
-## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
-################################################################################################
-# #exec --no-startup-id volumeicon
-# bindsym $mod+Ctrl+s exec terminal -e 'alsamixer'
-# exec --no-startup-id pulseaudio
-# exec --no-startup-id pa-applet
-# # bindsym $mod+Ctrl+m exec pavucontrol
-# set $active_sink pacmd list-sinks |awk '/* index:/{print $3}'
-# bindsym XF86AudioRaiseVolume exec "/home/ricardo/.config/i3/volcontrol.sh up"
-# bindsym XF86AudioLowerVolume exec "/home/ricardo/.config/i3/volcontrol.sh down"
-# bindsym XF86AudioMute exec "/home/ricardo/.config/i3/volcontrol.sh toggle"
-
-################################################################################################
-
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp   exec xbacklight + 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight - 10 # decrease screen brightness
@@ -272,18 +261,15 @@ bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
 # Autostart applications
 # exec_always --no-startup-id ~/.config/screenlayout/monitor.sh
 # exec_always --no-startup-id compton --config  ~/.config/compton.conf
-# exec --no-startup-id xset -b
 
 exec --no-startup-id ~/.config/i3/us_intl_keymap
 exec --no-startup-id nm-applet
-#exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit
 exec --no-startup-id blueman
 exec --no-startup-id xautolock -time 10 -locker i3lock
-# exec mpd ~/.config/mpd/mpd.conf
-exec --no-startup-id i3-msg 'exec /usr/bin/pulseaudio -D --system'
-# exec --no-startup-id mpd ~/.config/mpd/mpd.conf
-# exec_always --no-startup-id fix_xcursor
+exec --no-startup-id pulseaudio -D
+exec --no-startup-id xset -b
+exec --no-startup-id xradr --output HDMI-1 --left-of eDP-1
 
 # Workspace configuration
 
