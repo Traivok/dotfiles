@@ -267,6 +267,7 @@ bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
 # exec_always --no-startup-id ~/.config/screenlayout/monitor.sh
 # exec_always --no-startup-id compton --config  ~/.config/compton.conf
 
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id ~/.config/i3/us_intl_keymap
 exec --no-startup-id nm-applet
 exec --no-startup-id clipit

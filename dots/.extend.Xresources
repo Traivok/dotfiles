@@ -70,7 +70,7 @@ URxvt*.foreground:               #c5c8c6
 URxvt*cursorColor:               #c5c8c6
 URxvt*saveLines:                 5000
 
-URxvt.perl-ext-common:    default,matcher,selection-to-clipboard,keyboard-select,fullscreen,tabbedex
+URxvt.perl-ext-common:    default,matcher,selection-to-clipboard,keyboard-select,fullscreen
 URxvt.clipboard.autocopy: true ! copy to clipboard
 URxvt.keysym.M-Escape:    perl:keyboard-select:activate
 URxvt.keysym.F11:         perl:fullscreen:switch

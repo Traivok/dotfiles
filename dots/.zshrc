@@ -26,7 +26,7 @@ antigen apply
 
 # User configuration
 
-bindkey -v
+bindkey -e
 
 unsetopt share_history
 

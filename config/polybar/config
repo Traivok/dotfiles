@@ -50,7 +50,7 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = network wired-network wireless-network pulseaudio battery exit
+modules-right = xkeyboard network wired-network wireless-network pulseaudio battery exit
 
 
 tray-position = none
@@ -299,3 +299,14 @@ bar-progress-indicator = o
 bar-progress-fill = ─
 bar-progress-empty = ─
 bar-progress-fill-foreground = ${colors.color2}
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+black-list-0 = num lock
+black-list-1 = scroll lock
+black-list-2 = caps-lock
+
+format = <label-layout>
+format-padding = 2
+label-layout = %layout% 

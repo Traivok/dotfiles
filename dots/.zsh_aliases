@@ -1,5 +1,7 @@
 export ais='ec2-user@ec2-35-166-153-123.us-west-2.compute.amazonaws.com'
-export smartlps='ec2-user@ec2-35-166-153-123.us-west-2.compute.amazonaws.com'
+export smartlps='ec2-user@ec2-34-221-159-129.us-west-2.compute.amazonaws.com'
+
+alias ssh='TERM=vt100 ssh'
 
 alias nvp='$HOME/Development/Navalport'
 alias back='$HOME/Development/Navalport/backend'
@@ -8,5 +10,3 @@ alias front='$HOME/Development/Navalport/frontend'
 alias pm2del='pm2 delete all'
 alias pm2clear='rm $HOME/.pm2/logs/*'
 alias pm2stop='pm2 stop display buzzer laser'
-
-alias laserconfig='sudo ip addr add '$LASER_IP_0' dev enp2s0; sudo ip addr add '$LASER_IP_1' dev enp2s0'
