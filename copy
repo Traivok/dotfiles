@@ -20,7 +20,7 @@ TARGET="./dots"
 backup "${DIR}" "${PATHS}" "$TARGET"
 
 DIR="$HOME/.config"
-PATHS="nitrogen ncmpcpp rofi polybar i3 ranger cava"
+PATHS="nitrogen ncmpcpp rofi polybar i3 ranger cava compton.conf"
 TARGET="./config"
 
 backup "${DIR}" "${PATHS}" "$TARGET"
