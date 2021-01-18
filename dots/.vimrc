@@ -11,11 +11,14 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 
-" User
+" User Setup
 set expandtab
 set relativenumber
 
 syntax enable
+
+au BufReadPost *.Xresources set syntax=xdefaults
+
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -24,3 +27,5 @@ Plugin 'dracula/vim', { 'name': 'dracula' }
 
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-syntastic/syntastic'
+
+filetype plugin indent on
