@@ -43,7 +43,7 @@ mode "$mode_system" {
 bindsym $mod+Shift+q kill
 bindsym --release button2 kill
 
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -modi drun -show drun
 
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -110,24 +110,33 @@ set $workspace1 "1"
 set $workspace2 "2"
 set $workspace3 "3"
 set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
-bindsym $mod+4 workspace $worskpace4
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
 bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
 
 # screens
 workspace 1 output HDMI-1 eDP-1
 workspace 2 output HDMI-1 eDP-1
-workspace 3 output eDP-1 HDMI-1
+workspace 3 output HDMI-1 eDP-1
+
 workspace 4 output eDP-1 HDMI-1
+workspace 5 output eDP-1 HDMI-1
+workspace 6 output eDP-1 HDMI-1
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -138,14 +147,10 @@ bindsym $mod+Shift+r restart
 mode "resize" {
     # These bindings trigger as soon as you enter the resize mode
 
-    # Pressing left will shrink the window’s width.
-    # Pressing right will grow the window’s width.
-    # Pressing up will shrink the window’s height.
-    # Pressing down will grow the window’s height.
-    bindsym j resize shrink width 10 px or 10 ppt
-    bindsym k resize grow height 10 px or 10 ppt
-    bindsym l resize shrink height 10 px or 10 ppt
-    bindsym c resize grow width 10 px or 10 ppt
+    bindsym a resize shrink width 10 px or 10 ppt
+    bindsym w resize grow height 10 px or 10 ppt
+    bindsym s resize shrink height 10 px or 10 ppt
+    bindsym d resize grow width 10 px or 10 ppt
 
     # same bindings, but for the arrow keys
     bindsym Left resize shrink width 10 px or 10 ppt
@@ -264,10 +269,10 @@ bindsym XF86AudioNext        exec --no-startup-id playerctl next
 bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
 
 # Autostart applications
-# exec_always --no-startup-id ~/.config/screenlayout/monitor.sh
 exec_always --no-startup-id compton --config  ~/.config/compton.conf
 
-exec --no-startup-id nitrogen --restore
+exec_always --no-startup-id xradr --output HDMI-1 --left-of eDP-1
+exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id ~/.config/i3/us_intl_keymap
 exec --no-startup-id nm-applet
 exec --no-startup-id clipit
@@ -275,7 +280,6 @@ exec --no-startup-id blueman
 exec --no-startup-id xautolock -time 10 -locker i3lock
 exec --no-startup-id pulseaudio -D
 exec --no-startup-id xset -b
-exec --no-startup-id xradr --output HDMI-1 --left-of eDP-1
 
 # Workspace configuration
 

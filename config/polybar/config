@@ -246,15 +246,12 @@ format-disconnected-padding = 2
 format-connected-foreground =  ${colors.foreground}
 format-disconnected-foreground = ${colors.color8}
 
-
 [module/wired-network]
 type = internal/network
 inherit = module/network
 interface = enp2s0
 label-connected = " %downspeed:8%"
-fomart-connected-padding = 2
 label-disconnected ""
-format-disconnected-padding = 2
 
 [module/wireless-network]
 type = internal/network

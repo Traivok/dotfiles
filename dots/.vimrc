@@ -1,24 +1,10 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
-
-" User Setup
-set expandtab
-set relativenumber
-
-syntax enable
-
-au BufReadPost *.Xresources set syntax=xdefaults
-
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -28,4 +14,23 @@ Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-syntastic/syntastic'
 
+Plugin 'chrisbra/Colorizer'
+
+call vundle#end()
+
 filetype plugin indent on
+syntax on
+
+set relativenumber
+
+set tabstop=4 
+set shiftwidth=4             
+set autoindent
+
+set expandtab
+set smarttab
+
+
+au BufReadPost *.Xresources set syntax=xdefaults
+
+let g:colorizer_syntax = 1
