@@ -1,5 +1,7 @@
 # Basic script to kill all old bars and launch new.
 
+DIR="$HOME/.config/polybar"
+
 # Terminate already running bad instances
 killall -q polybar
 
@@ -7,6 +9,8 @@ killall -q polybar
 while grep -x polybar >/dev/null; do sleep 1; done
 
 # Launch the main bar
-polybar main_bar
+polybar -q main -c "$DIR/config.ini"
 
-if xrandr | grep -q 'HDMI-1 connected'; then polybar second_bar; fi
+if xrandr | grep -q 'HDMI-1 connected'; then
+    polybar -q secondary -c "$DIR/config.ini"
+fi
