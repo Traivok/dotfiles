@@ -1,0 +1,832 @@
+02/06/2021 10:10:36 AM - Enabling debug logging
+02/06/2021 10:10:36 AM - CORE DUMPS: You are running a development version of i3, so coredumps were automatically enabled (ulimit -c unlimited).
+02/06/2021 10:10:36 AM - CORE DUMPS: Your current working directory is "/home/ricardo/.config/polybar".
+02/06/2021 10:10:36 AM - CORE DUMPS: Your core_pattern is: core
+02/06/2021 10:10:36 AM - i3 4.19-25-g4e11a4ee starting
+02/06/2021 10:10:36 AM - ../libi3/dpi.c:init_dpi:55 - Found Xft.dpi = 96.
+02/06/2021 10:10:36 AM - ../src/main.c:main:604 - root_depth = 32, visual_id = 0x000000ef.
+02/06/2021 10:10:36 AM - ../src/main.c:main:606 - root_screen->height_in_pixels = 1080, root_screen->height_in_millimeters = 285
+02/06/2021 10:10:36 AM - ../src/main.c:main:607 - One logical pixel corresponds to 1 physical pixels on this display.
+02/06/2021 10:10:36 AM - Parsing configfile /home/ricardo/.config/i3/config
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $mod = Mod4
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $mode_keymap = (b)r abnt2, (u)s , us (i)nternational 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $mode_system = (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace1 = "1"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace2 = "2"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace3 = "3"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace4 = "4"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace5 = "5"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace6 = "6"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace7 = "7"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace8 = "8"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $workspace9 = "9"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $background = #282A36
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $foreground = #F8F8F2
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color0 = #000000
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color1 = #FF5555
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color2 = #50FA7B
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color3 = #BD93F9
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color4 = #BD93F9
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color5 = #FF79C6
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color6 = #8BE9FD
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color7 = #BFBFBF
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color8 = #4D4D4D
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color9 = #FF6E67
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color10 = #5AF78E
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color11 = #CAA9FA
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color12 = #CAA9FA
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color13 = #FF92D0
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color14 = #9AEDFE
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $color15 = #E6E6E6
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $innerdefault = 8
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $outerdefault = 0
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $mode_gaps = Gaps: (o) outer, (i) inner
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $mode_gaps_outer = Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+02/06/2021 10:10:36 AM - ../src/config_parser.c:upsert_variable:835 - Defined new variable: $mode_gaps_inner = Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+02/06/2021 10:10:36 AM - deciding for version 4 due to this line: bindsym $mod+j focus left
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   1): set Mod4 Mod4
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   2): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   3): font pango:San Francisco Display 10
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   4): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   5): # Use Mouse+Mod4 to drag floating windows to their wanted position
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   6): floating_modifier Mod4
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   7): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   8): # start a terminal
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line   9): bindsym Mod4+Return exec i3-sensible-terminal
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  10): bindsym Print exec gscreenshot
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  11): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  12): # change keyboard layout
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  13): bindsym Mod1+Shift+Enter mode "(b)r abnt2, (u)s , us (i)nternational "
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  14): set (b)r abnt2, (u)s , us (i)nternational  (b)r abnt2, (u)s , us (i)nternational 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  15): mode "(b)r abnt2, (u)s , us (i)nternational " {
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  16): bindsym b exec --no-startup-id ~/.config/i3/br_keymap , mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  17):     bindsym u exec --no-startup-id ~/.config/i3/us_keymap , mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  18):     bindsym i exec --no-startup-id ~/.config/i3/us_intl_keymap , mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  19): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  20):     bindsym Return mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  21):     bindsym Escape mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  22): }
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  23): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  24): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  25): # Set shut down, restart and locking features
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  26): bindsym Mod4+Shift+e mode "(l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  27): set (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  28): mode "(l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown" {
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  29):     bindsym l exec --no-startup-id "~/.config/polybar/scripts/exit.sh lock", mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  30):     bindsym s exec --no-startup-id "~/.config/polybar/scripts/exit.sh suspend", mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  31):     bindsym u exec --no-startup-id "~/.config/polybar/scripts/exit.sh switch_user", mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  32):     bindsym e exec --no-startup-id "~/.config/polybar/scripts/exit.sh logout", mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  33):     bindsym h exec --no-startup-id "~/.config/polybar/scripts/exit.sh hibernate", mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  34):     bindsym r exec --no-startup-id "~/.config/polybar/scripts/exit.sh reboot", mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  35):     bindsym Shift+s exec --no-startup-id "~/.config/polybar/scripts/exit.sh shutdown", mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  36): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  37):     # exit system mode: "Enter" or "Escape"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  38):     bindsym Return mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  39):     bindsym Escape mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  40): }
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  41):  
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  42): # kill focused window
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  43): bindsym Mod4+Shift+q kill
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  44): bindsym --release button2 kill
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  45): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  46): bindsym Mod4+d exec rofi -modi drun -show drun
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  47): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  48): bindsym Mod4+j focus left
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  49): bindsym Mod4+k focus down
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  50): bindsym Mod4+i focus up
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  51): bindsym Mod4+l focus right
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  52): # alternatively, you can use the cursor keys:
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  53): bindsym Mod4+Left focus left
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  54): bindsym Mod4+Down focus down
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  55): bindsym Mod4+Up focus up
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  56): bindsym Mod4+Right focus right
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  57): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  58): bindsym Mod4+Shift+j move left
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  59): bindsym Mod4+Shift+k move down
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  60): bindsym Mod4+Shift+i move up
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  61): bindsym Mod4+Shift+l move right
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  62): # alternatively, you can use the cursor keys:
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  63): bindsym Mod4+Shift+Left move left
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  64): bindsym Mod4+Shift+Down move down
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  65): bindsym Mod4+Shift+Up move up
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  66): bindsym Mod4+Shift+Right move right
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  67): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  68): # split in horizontal orientation
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  69): bindsym Mod4+h split h
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  70): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  71): # split in vertical orientation
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  72): bindsym Mod4+v split v
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  73): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  74): # enter fullscreen mode for the focused container
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  75): bindsym Mod4+f fullscreen toggle
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  76): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  77): # change container layout (stacked, tabbed, toggle split)
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  78): bindsym Mod4+s layout stacking
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  79): bindsym Mod4+w layout tabbed
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  80): bindsym Mod4+e layout toggle split
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  81): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  82): # toggle tiling / floating
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  83): bindsym Mod4+Shift+space floating toggle
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  84): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  85): # change focus between tiling / floating windows
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  86): bindsym Mod4+space focus mode_toggle
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  87): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  88): # focus the parent container
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  89): bindsym Mod4+a focus parent
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  90): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  91): # focus the child container
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  92): #bindsym Mod4+d focus child
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  93): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  94): # move the currently focused window to the scratchpad
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  95): bindsym Mod4+Shift+minus move scratchpad
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  96): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  97): # Show the next scratchpad window or hide the focused scratchpad window.
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  98): # If there are multiple scratchpad windows, this command cycles through them.
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line  99): bindsym Mod4+F9 scratchpad show
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 100): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 101): #navigate workspaces next / previous
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 102): bindsym Mod4+Ctrl+n workspace next
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 103): bindsym Mod4+n workspace next
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 104): bindsym Mod4+Ctrl+p workspace prev
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 105): bindsym Mod4+p workspace prev
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 106): bindsym Mod4+Shift+w move workspace to output right
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 107): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 108): # set workspace names
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 109): set "1" "1"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 110): set "2" "2"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 111): set "3" "3"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 112): set "4" "4"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 113): set "5" "5"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 114): set "6" "6"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 115): set "7" "7"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 116): set "8" "8"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 117): set "9" "9"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 118): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 119): # switch to workspace
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 120): bindsym Mod4+1 workspace "1"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 121): bindsym Mod4+2 workspace "2"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 122): bindsym Mod4+3 workspace "3"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 123): bindsym Mod4+4 workspace "4"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 124): bindsym Mod4+5 workspace "5"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 125): bindsym Mod4+6 workspace "6"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 126): bindsym Mod4+7 workspace "7"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 127): bindsym Mod4+8 workspace "8"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 128): bindsym Mod4+9 workspace "9"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 129): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 130): # move focused container to workspace
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 131): bindsym Mod4+Shift+1 move container to workspace "1"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 132): bindsym Mod4+Shift+2 move container to workspace "2"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 133): bindsym Mod4+Shift+3 move container to workspace "3"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 134): bindsym Mod4+Shift+4 move container to workspace "4"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 135): bindsym Mod4+Shift+5 move container to workspace "5"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 136): bindsym Mod4+Shift+6 move container to workspace "6"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 137): bindsym Mod4+Shift+7 move container to workspace "7"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 138): bindsym Mod4+Shift+8 move container to workspace "8"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 139): bindsym Mod4+Shift+9 move container to workspace "9"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 140): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 141): # screens
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 142): #workspace 1 output HDMI-1 eDP-1
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 143): #workspace 2 output eDP-1 HDMI-1
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 144): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 145): # reload the configuration file
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 146): bindsym Mod4+Shift+c reload
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 147): # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 148): bindsym Mod4+Shift+r restart
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 149): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 150): # resize window (you can also use the mouse for that)
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 151): mode "resize" {
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 152):     # These bindings trigger as soon as you enter the resize mode
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 153): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 154):     bindsym a resize shrink width 10 px or 10 ppt
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 155):     bindsym w resize grow height 10 px or 10 ppt
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 156):     bindsym s resize shrink height 10 px or 10 ppt
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 157):     bindsym d resize grow width 10 px or 10 ppt
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 158): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 159):     # same bindings, but for the arrow keys
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 160):     bindsym Left resize shrink width 10 px or 10 ppt
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 161):     bindsym Down resize grow height 10 px or 10 ppt
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 162):     bindsym Up resize shrink height 10 px or 10 ppt
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 163):     bindsym Right resize grow width 10 px or 10 ppt
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 164): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 165):     # back to normal: Enter or Escape
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 166):     bindsym Return mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 167):     bindsym Escape mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 168): }
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 169): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 170): bindsym Mod4+r mode "resize"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 171): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 172): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 173): # Colors set from ~/.Xresources
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 174): set_from_resource   #282A36 background
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 175): set_from_resource   #F8F8F2 foreground
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 176): set_from_resource   #000000     color0
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 177): set_from_resource   #FF5555     color1
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 178): set_from_resource   #50FA7B     color2
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 179): set_from_resource   #BD93F9     color3
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 180): set_from_resource   #BD93F9     color4
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 181): set_from_resource   #FF79C6     color5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 182): set_from_resource   #8BE9FD     color6
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 183): set_from_resource   #BFBFBF     color7
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 184): set_from_resource   #4D4D4D     color8
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 185): set_from_resource   #FF6E67     color9
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 186): set_from_resource   #5AF78E    color10
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 187): set_from_resource   #CAA9FA    color11
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 188): set_from_resource   #CAA9FA    color12
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 189): set_from_resource   #FF92D0    color13
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 190): set_from_resource   #9AEDFE    color14
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 191): set_from_resource   #E6E6E6    color15
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 192): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 193): # Polybar launch script (located ~/.config/polybar/launch.sh) 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 194): exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 195): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 196): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 197): # hide/unhide i3status bar
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 198): bindsym Mod4+m bar mode toggle
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 199): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 200): # Theme colors
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 201): # class                 border      backgr.     text        indic.          child_border
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 202): # My colors
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 203): client.background       #282A36
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 204): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 205): client.focused          #F8F8F2 #282A36 #F8F8F2 #282A36     #282A36 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 206): client.unfocused        #F8F8F2 #282A36 #F8F8F2 #282A36     #282A36
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 207): client.focused_inactive #F8F8F2 #282A36 #F8F8F2 #282A36     #282A36
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 208): client.urgent           #F8F8F2 #282A36 #F8F8F2 #282A36     #282A36
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 209): client.placeholder      #F8F8F2 #282A36 #F8F8F2 #282A36     #282A36
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 210): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 211): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 212): hide_edge_borders both
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 213): for_window [class="^.*"] border pixel 0
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 214): smart_borders on
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 215): smart_gaps on
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 216): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 217): set  8 8
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 218): gaps inner 8
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 219): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 220): set  0 0
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 221): gaps outer 0
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 222): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 223): # Press Mod4+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 224): set Gaps: (o) outer, (i) inner Gaps: (o) outer, (i) inner
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 225): set Outer Gaps: +|-|0 (local), Shift + +|-|0 (global) Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 226): set Inner Gaps: +|-|0 (local), Shift + +|-|0 (global) Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 227): bindsym Mod4+Shift+g mode "Gaps: (o) outer, (i) inner"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 228): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 229): mode "Gaps: (o) outer, (i) inner" {
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 230):     bindsym o      mode "Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 231):     bindsym i      mode "Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 232):     bindsym Return mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 233):     bindsym Escape mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 234): }
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 235): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 236): mode "Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)" {
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 237):     bindsym plus  gaps inner current plus 5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 238):     bindsym minus gaps inner current minus 5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 239):     bindsym 0     gaps inner current set 8
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 240): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 241):     bindsym Shift+plus  gaps inner all plus 5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 242):     bindsym Shift+minus gaps inner all minus 5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 243):     bindsym Shift+0     gaps inner all set 8
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 244): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 245):     bindsym Return mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 246):     bindsym Escape mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 247): }
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 248): mode "Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)" {
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 249):     bindsym plus  gaps outer current plus 5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 250):     bindsym minus gaps outer current minus 5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 251):     bindsym 0     gaps outer current set 0
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 252): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 253):     bindsym Shift+plus  gaps outer all plus 5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 254):     bindsym Shift+minus gaps outer all minus 5
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 255):     bindsym Shift+0     gaps outer all set 0
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 256): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 257):     bindsym Return mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 258):     bindsym Escape mode "default"
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 259): }
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 260): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 261): # Sreen brightness controls
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 262): bindsym XF86MonBrightnessUp   exec xbacklight + 10 # increase screen brightness
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 263): bindsym XF86MonBrightnessDown exec xbacklight - 10 # decrease screen brightness
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 264): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 265): # Pulse Audio Controls
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 266): bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%  # Increase
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 267): bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%  # Decrease
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 268): bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 0 toggle # Mute
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 269): # Media player controls
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 270): bindsym XF86AudioPlay        exec --no-startup-id playerctl play
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 271): bindsym XF86AudioPause       exec --no-startup-id playerctl pause
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 272): bindsym XF86AudioNext        exec --no-startup-id playerctl next
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 273): bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 274): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 275): # Autostart applications
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 276): exec_always --no-startup-id compton --config  ~/.config/compton.conf
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 277): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 278): exec_always --no-startup-id xradr --output HDMI-1 --left-of eDP-1
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 279): exec_always --no-startup-id nitrogen --restore
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 280): exec --no-startup-id ~/.config/i3/us_intl_keymap
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 281): exec --no-startup-id nm-applet
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 282): exec --no-startup-id clipit
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 283): exec --no-startup-id blueman
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 284): exec --no-startup-id xautolock -time 10 -locker i3lock
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 285): exec --no-startup-id pulseaudio -D
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 286): exec --no-startup-id xset -b
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 287): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 288): # Workspace configuration
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 289): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 290): # enable floating defaults
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 291): # Open specific applications in floating mode
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 292): for_window [class="Nitrogen"] floating enable sticky enable border normal
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 293): for_window [class="Pavucontrol"] floating enable
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 294): for_window [class="Gscreenshot"] floating enable
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 295): for_window [class="(?i)keepassx"] floating enable
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 296): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 297): for_window [window_role="pop-up"] floating enable
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 298): for_window [window_role="bubble"] floating enable 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 299): for_window [window_role="task_dialog"] floating enable 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 300): for_window [window_role="Preferences"] floating enable 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 301): for_window [window_type="dialog"] floating enable 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 302): for_window [window_type="menu"] floating enable
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 303): 
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 304): for_window [title="File Upload"] floating enable floating_maximum 3 x 3 floating minimum 1 x 1 #testing
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 305): # switch to workspace with urgent window automatically
+02/06/2021 10:10:36 AM - ../src/config_parser.c:parse_config:268 - CONFIG(line 306): for_window [urgent=latest] focus
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - [libi3] ../libi3/font.c Using Pango font San Francisco Display, size 10
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473bd970 bindtype bindsym, modifiers Mod4, input code Return, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x557647322900 bindtype bindsym, modifiers (null), input code Print, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x557647322970 bindtype bindsym, modifiers Mod1,Shift, input code Enter, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_enter_mode:134 - 	 now in mode (b)r abnt2, (u)s , us (i)nternational 
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x557647322a30 bindtype bindsym, modifiers (null), input code b, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x557647322b40 bindtype bindsym, modifiers (null), input code u, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x557647322c00 bindtype bindsym, modifiers (null), input code i, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x557647322c90 bindtype bindsym, modifiers (null), input code Return, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0690 bindtype bindsym, modifiers (null), input code Escape, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0770 bindtype bindsym, modifiers Mod4,Shift, input code e, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_enter_mode:134 - 	 now in mode (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c08a0 bindtype bindsym, modifiers (null), input code l, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0a20 bindtype bindsym, modifiers (null), input code s, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0af0 bindtype bindsym, modifiers (null), input code u, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0bc0 bindtype bindsym, modifiers (null), input code e, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0c90 bindtype bindsym, modifiers (null), input code h, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0d60 bindtype bindsym, modifiers (null), input code r, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0e30 bindtype bindsym, modifiers Shift, input code s, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0ec0 bindtype bindsym, modifiers (null), input code Return, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0f50 bindtype bindsym, modifiers (null), input code Escape, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c0fe0 bindtype bindsym, modifiers Mod4,Shift, input code q, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1070 bindtype bindsym, modifiers (null), input code button2, release --release
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1110 bindtype bindsym, modifiers Mod4, input code d, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c11a0 bindtype bindsym, modifiers Mod4, input code j, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1230 bindtype bindsym, modifiers Mod4, input code k, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c12c0 bindtype bindsym, modifiers Mod4, input code i, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1350 bindtype bindsym, modifiers Mod4, input code l, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c13e0 bindtype bindsym, modifiers Mod4, input code Left, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1470 bindtype bindsym, modifiers Mod4, input code Down, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1500 bindtype bindsym, modifiers Mod4, input code Up, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1590 bindtype bindsym, modifiers Mod4, input code Right, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1620 bindtype bindsym, modifiers Mod4,Shift, input code j, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c16b0 bindtype bindsym, modifiers Mod4,Shift, input code k, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1740 bindtype bindsym, modifiers Mod4,Shift, input code i, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c17d0 bindtype bindsym, modifiers Mod4,Shift, input code l, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1860 bindtype bindsym, modifiers Mod4,Shift, input code Left, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c18f0 bindtype bindsym, modifiers Mod4,Shift, input code Down, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1980 bindtype bindsym, modifiers Mod4,Shift, input code Up, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1a10 bindtype bindsym, modifiers Mod4,Shift, input code Right, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1aa0 bindtype bindsym, modifiers Mod4, input code h, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1b30 bindtype bindsym, modifiers Mod4, input code v, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1bc0 bindtype bindsym, modifiers Mod4, input code f, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1c50 bindtype bindsym, modifiers Mod4, input code s, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1ce0 bindtype bindsym, modifiers Mod4, input code w, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1d70 bindtype bindsym, modifiers Mod4, input code e, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1e00 bindtype bindsym, modifiers Mod4,Shift, input code space, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1e90 bindtype bindsym, modifiers Mod4, input code space, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1f20 bindtype bindsym, modifiers Mod4, input code a, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c1fb0 bindtype bindsym, modifiers Mod4,Shift, input code minus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2040 bindtype bindsym, modifiers Mod4, input code F9, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c20d0 bindtype bindsym, modifiers Mod4,Ctrl, input code n, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2160 bindtype bindsym, modifiers Mod4, input code n, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c21f0 bindtype bindsym, modifiers Mod4,Ctrl, input code p, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2280 bindtype bindsym, modifiers Mod4, input code p, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2320 bindtype bindsym, modifiers Mod4,Shift, input code w, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c23b0 bindtype bindsym, modifiers Mod4, input code 1, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2440 bindtype bindsym, modifiers Mod4, input code 2, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c24d0 bindtype bindsym, modifiers Mod4, input code 3, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2560 bindtype bindsym, modifiers Mod4, input code 4, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c25f0 bindtype bindsym, modifiers Mod4, input code 5, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2680 bindtype bindsym, modifiers Mod4, input code 6, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2710 bindtype bindsym, modifiers Mod4, input code 7, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c27a0 bindtype bindsym, modifiers Mod4, input code 8, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2830 bindtype bindsym, modifiers Mod4, input code 9, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c28d0 bindtype bindsym, modifiers Mod4,Shift, input code 1, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2970 bindtype bindsym, modifiers Mod4,Shift, input code 2, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2a10 bindtype bindsym, modifiers Mod4,Shift, input code 3, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2ab0 bindtype bindsym, modifiers Mod4,Shift, input code 4, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2b50 bindtype bindsym, modifiers Mod4,Shift, input code 5, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2bf0 bindtype bindsym, modifiers Mod4,Shift, input code 6, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2c90 bindtype bindsym, modifiers Mod4,Shift, input code 7, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2d30 bindtype bindsym, modifiers Mod4,Shift, input code 8, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2dd0 bindtype bindsym, modifiers Mod4,Shift, input code 9, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2e60 bindtype bindsym, modifiers Mod4,Shift, input code c, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2ef0 bindtype bindsym, modifiers Mod4,Shift, input code r, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_enter_mode:134 - 	 now in mode resize
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c2fb0 bindtype bindsym, modifiers (null), input code a, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c30a0 bindtype bindsym, modifiers (null), input code w, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3140 bindtype bindsym, modifiers (null), input code s, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c31e0 bindtype bindsym, modifiers (null), input code d, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3280 bindtype bindsym, modifiers (null), input code Left, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3320 bindtype bindsym, modifiers (null), input code Down, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c33c0 bindtype bindsym, modifiers (null), input code Up, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3460 bindtype bindsym, modifiers (null), input code Right, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c34f0 bindtype bindsym, modifiers (null), input code Return, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3580 bindtype bindsym, modifiers (null), input code Escape, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3610 bindtype bindsym, modifiers Mod4, input code r, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c36d0 bindtype bindsym, modifiers Mod4, input code m, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*class*, cvalue=*^.**
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command border pixel 0 for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c38e0 bindtype bindsym, modifiers Mod4,Shift, input code g, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_enter_mode:134 - 	 now in mode Gaps: (o) outer, (i) inner
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c39b0 bindtype bindsym, modifiers (null), input code o, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3aa0 bindtype bindsym, modifiers (null), input code i, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3b10 bindtype bindsym, modifiers (null), input code Return, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3ba0 bindtype bindsym, modifiers (null), input code Escape, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_enter_mode:134 - 	 now in mode Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3c80 bindtype bindsym, modifiers (null), input code plus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3d70 bindtype bindsym, modifiers (null), input code minus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3e10 bindtype bindsym, modifiers (null), input code 0, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3ea0 bindtype bindsym, modifiers Shift, input code plus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3f30 bindtype bindsym, modifiers Shift, input code minus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c3fc0 bindtype bindsym, modifiers Shift, input code 0, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4050 bindtype bindsym, modifiers (null), input code Return, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c40e0 bindtype bindsym, modifiers (null), input code Escape, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_enter_mode:134 - 	 now in mode Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c41c0 bindtype bindsym, modifiers (null), input code plus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c42b0 bindtype bindsym, modifiers (null), input code minus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4350 bindtype bindsym, modifiers (null), input code 0, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c43e0 bindtype bindsym, modifiers Shift, input code plus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4470 bindtype bindsym, modifiers Shift, input code minus, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4500 bindtype bindsym, modifiers Shift, input code 0, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4590 bindtype bindsym, modifiers (null), input code Return, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4620 bindtype bindsym, modifiers (null), input code Escape, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c46d0 bindtype bindsym, modifiers (null), input code XF86MonBrightnessUp, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4780 bindtype bindsym, modifiers (null), input code XF86MonBrightnessDown, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4840 bindtype bindsym, modifiers (null), input code XF86AudioRaiseVolume, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4900 bindtype bindsym, modifiers (null), input code XF86AudioLowerVolume, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c49c0 bindtype bindsym, modifiers (null), input code XF86AudioMute, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4a60 bindtype bindsym, modifiers (null), input code XF86AudioPlay, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4b00 bindtype bindsym, modifiers (null), input code XF86AudioPause, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4ba0 bindtype bindsym, modifiers (null), input code XF86AudioNext, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/bindings.c:configure_binding:64 - Binding 0x5576473c4c40 bindtype bindsym, modifiers (null), input code XF86AudioPrev, release (null)
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*class*, cvalue=*Nitrogen*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable sticky enable border normal for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*class*, cvalue=*Pavucontrol*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*class*, cvalue=*Gscreenshot*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*class*, cvalue=*(?i)keepassx*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*window_role*, cvalue=*pop-up*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*window_role*, cvalue=*bubble*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable  for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*window_role*, cvalue=*task_dialog*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable  for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*window_role*, cvalue=*Preferences*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable  for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*window_type*, cvalue=*dialog*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable  for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*window_type*, cvalue=*menu*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*title*, cvalue=*File Upload*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command floating enable floating_maximum 3 x 3 floating minimum 1 x 1 #testing for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 35
+02/06/2021 10:10:36 AM - ../src/match.c:match_parse_property:284 - ctype=*urgent*, cvalue=*latest*
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_for_window:156 - 	 should execute command focus for the criteria mentioned above
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/config_directives.c:cfg_criteria_init:26 - Initializing criteria, current_match = 0x557646b4c5c0, state = 98
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec i3-sensible-terminal
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec gscreenshot
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command mode "(b)r abnt2, (u)s , us (i)nternational "
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command mode "(l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command kill
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command kill
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec rofi -modi drun -show drun
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus left
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus down
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus up
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus right
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus left
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus down
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus up
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus right
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move left
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move down
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move up
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move right
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move left
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move down
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move up
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move right
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command split h
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command split v
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command fullscreen toggle
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command layout stacking
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command layout tabbed
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command layout toggle split
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command floating toggle
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus mode_toggle
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command focus parent
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move scratchpad
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command scratchpad show
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace next
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace next
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace next
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace next
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace prev
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace prev
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace prev
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace prev
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move workspace to output right
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "1"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "1"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "1"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "2"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "2"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "2"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "3"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "3"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "3"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "4"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "4"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "4"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "5"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "5"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "5"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "6"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "6"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "6"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "7"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "7"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "7"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "8"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "8"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "8"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command workspace "9"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:206 - relevant command = workspace "9"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:240 - Saving workspace name "9"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "1"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "2"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "3"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "4"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "5"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "6"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "7"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "8"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command move container to workspace "9"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command reload
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command restart
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command mode "resize"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command bar mode toggle
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command mode "Gaps: (o) outer, (i) inner"
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec xbacklight + 10 # increase screen brightness
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec xbacklight - 10 # decrease screen brightness
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec --no-startup-id pactl set-sink-volume 0 +5%  # Increase
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec --no-startup-id pactl set-sink-volume 0 -5%  # Decrease
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec --no-startup-id pactl set-sink-mute 0 toggle # Mute
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec --no-startup-id playerctl play
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec --no-startup-id playerctl pause
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec --no-startup-id playerctl next
+02/06/2021 10:10:36 AM - ../src/workspace.c:extract_workspace_names_from_bindings:202 - binding with command exec --no-startup-id playerctl previous
+02/06/2021 10:10:36 AM - ERROR: Another window manager seems to be running (X error 10)

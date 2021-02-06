@@ -13,6 +13,8 @@ backup() {
     done
 }
 
+rm -rf ./dots ./config
+
 PATHS=".Xresources .extend.Xresources .zshrc .zsh_aliases .p10k.zsh .vimrc"
 DIR=$HOME
 TARGET="./dots"
