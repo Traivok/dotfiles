@@ -279,7 +279,7 @@ bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
 # Autostart applications
 exec_always --no-startup-id compton --config  ~/.config/compton.conf
 
-exec_always --no-startup-id xradr --output HDMI-1 --left-of eDP-1
+exec_always --no-startup-id xrandr --output HDMI-1 --left-of eDP-1
 exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id ~/.config/i3/us_intl_keymap
 exec --no-startup-id nm-applet
